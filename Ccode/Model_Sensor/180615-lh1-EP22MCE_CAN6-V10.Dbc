@@ -1,0 +1,2176 @@
+VERSION "HSCAN6"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS Diagnostics ISC OBC_OnBoardCharger PTC SAC TBOX TC Tester VCU WLC vector__xxx
+
+
+BO_ 952 BMS_Charger_HSC6_FrP01: 8 BMS
+ SG_ ChargerACCurrentHSC6 : 15|8@0+ (0.2,0) [0|50.8] "A"  Tester
+ SG_ ChargerACVoltHSC6 : 23|8@0+ (2,0) [0|508] "V"  Tester
+ SG_ ChargerFanStatusHSC6 : 31|2@0+ (1,0) [0|3] ""  Tester
+ SG_ ChargerHVCurrentHSC6 : 25|10@0+ (0.05,0) [0|51.1] "A"  TBOX,Tester
+ SG_ ChargerHVRelayStatusHSC6 : 27|2@0+ (1,0) [0|3] ""  Tester
+ SG_ ChargerHVVoltHSC6 : 46|15@0+ (0.02,0) [0|655.32] "V"  TBOX,Tester
+ SG_ ChargerStatusHSC6 : 63|4@0+ (1,0) [0|15] ""  TBOX,Tester
+ SG_ ChargerWakeUpHSC6 : 47|1@0+ (1,0) [0|1] ""  Tester
+ SG_ OnbdChrgCPPwmDutyHSC6 : 6|7@0+ (1,0) [0|127] ""  Tester
+ SG_ OnbdChrgCPPwmStatHSC6 : 59|3@0+ (1,0) [0|7] ""  TBOX
+
+BO_ 954 BMS_Charger_HSC6_FrP02: 8 BMS
+ SG_ BMSCellMaxTemIndxHSC6 : 7|8@0+ (1,0) [0|254] ""  TBOX
+ SG_ BMSCellMaxVolIndxHSC6 : 23|8@0+ (1,0) [0|254] ""  TBOX
+ SG_ BMSCellMinTemIndxHSC6 : 15|8@0+ (1,0) [0|254] ""  TBOX
+ SG_ BMSCellMinVolIndxHSC6 : 31|8@0+ (1,0) [0|254] ""  TBOX
+
+BO_ 956 BMS_Charger_HSC6_FrP03: 8 BMS
+ SG_ ChargerInsideTemp3HSC6 : 31|8@0+ (1,-40) [-40|214] "DegC"  TBOX
+ SG_ ChargerLVCurrentHSC6 : 55|8@0+ (0.1,0) [0|25.4] "A"  Tester
+ SG_ ChargerLVVoltHSC6 : 63|8@0+ (0.1,0) [0|25.4] "V"  Tester
+ SG_ ChrgrAltCrntLmtHSC6 : 23|8@0+ (0.5,0) [0|127] "A"  Tester
+ SG_ OBCShocketPosSnsrTempHSC6 : 15|8@0+ (1,-40) [-40|214] "¡æ"  TBOX
+ SG_ OnChrgCmdHSC6 : 6|3@0+ (1,0) [0|7] ""  Tester
+ SG_ OnChrgngFltHSC6 : 7|1@0+ (1,0) [0|1] ""  Tester
+ SG_ OnChrgrFltHSC6 : 3|1@0+ (1,0) [0|1] ""  Tester
+
+BO_ 958 BMS_Charger_HSC6_FrP04: 8 BMS
+ SG_ BMSCellTemHSC6 : 15|8@0+ (1,-40) [-40|215] "E=N*1-40"  TBOX
+ SG_ BMSCellTemIndxHSC6 : 39|8@0+ (1,0) [0|254] "E=N*1"  TBOX
+ SG_ BMSCellTemVHSC6 : 7|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSCellVolHSC6 : 19|12@0+ (0.001,1) [1|5.095] "E=N*0.001+1 V"  TBOX
+ SG_ BMSCellVolIndxHSC6 : 47|8@0+ (1,0) [0|254] "E=N*1"  TBOX
+ SG_ BMSCellVolVHSC6 : 6|1@0+ (1,0) [0|1] ""  TBOX
+
+BO_ 498 BMS_HSC6_BCM_FrP07: 2 BMS
+ SG_ SysBPMHSC6 : 5|2@0+ (1,0) [0|3] ""  OBC_OnBoardCharger
+ SG_ SysBPMEnbdHSC6 : 6|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+
+BO_ 659 BMS_HSC6_FrP00: 8 BMS
+ SG_ BMSBalancingDoneHSC6 : 18|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSBalancingStatusHSC6 : 24|1@0+ (1,0) [0|1] ""  TBOX,Tester
+ SG_ BMSCellBalancingCountHSC6 : 15|8@0+ (1,0) [0|253] ""  Tester
+ SG_ BMSCellOverVoltHSC6 : 39|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSCellUnderVoltHSC6 : 19|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSContactorPowerCmdHSC6 : 16|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSContactorPowerMonHSC6 : 25|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSCrashCircuitStatusHSC6 : 17|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSEEpromWipHSC6 : 38|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSLVBatInputHSC6 : 7|8@0+ (0.1,0) [0|25.3] "V"  TBOX,Tester
+ SG_ BMSModuleEnableHSC6 : 27|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSNegRelayStatusHSC6 : 47|2@0+ (1,0) [0|3] ""  TBOX,Tester
+ SG_ BMSOffbdChargerWakeupHSC6 : 30|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSOnbdChargerWakeupHSC6 : 28|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSPosRelayStatusHSC6 : 33|2@0+ (1,0) [0|3] ""  TBOX,Tester
+ SG_ BMSPreRelayStatusHSC6 : 35|2@0+ (1,0) [0|3] ""  TBOX,Tester
+ SG_ BMSPTIsolationLevelHSC6 : 37|2@0+ (1,0) [0|3] ""  Tester
+ SG_ BMSReadyHSC6 : 26|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSRelayStepHSC6 : 23|4@0+ (1,0) [0|15] ""  TBOX,Tester
+ SG_ BMSVehicleWakeupHSC6 : 29|1@0+ (1,0) [0|1] ""  TBOX,Tester
+
+BO_ 661 BMS_HSC6_FrP01: 8 BMS
+ SG_ BMSChecksum01HSC6 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ BMSCounter01HSC6 : 7|4@0+ (1,0) [0|15] "count value"  VCU
+ SG_ BMSPackCrntV_h6HSC6 : 28|1@0+ (1,0) [0|1] ""  ISC,SAC,TBOX,TC,Tester,VCU
+ SG_ BMSPackCrnt_h6HSC6 : 47|16@0+ (0.05,-1000) [-1000|2276.75] "A"  ISC,SAC,TBOX,TC,Tester,VCU
+ SG_ BMSPackSOCHSC6 : 25|10@0+ (0.1,0) [0|102.3] "%"  ISC,SAC,TBOX,TC,Tester,VCU
+ SG_ BMSPackSOCVHSC6 : 26|1@0+ (1,0) [0|1] ""  ISC,SAC,TBOX,TC,Tester,VCU
+ SG_ BMSPackVolV_h6HSC6 : 27|1@0+ (1,0) [0|1] ""  ISC,SAC,TBOX,TC,VCU
+ SG_ BMSPackVol_h6HSC6 : 3|12@0+ (0.25,0) [0|1023.75] "V"  ISC,PTC,SAC,TBOX,TC,VCU
+
+BO_ 663 BMS_HSC6_FrP02: 8 BMS
+ SG_ BMSBscSta_h6HSC6 : 12|5@0+ (1,0) [0|31] ""  ISC,SAC,TBOX,TC,VCU
+ SG_ BMSCdstCtrHSC6 : 39|2@0+ (1,0) [0|3] ""  TBOX,VCU
+ SG_ BMSChecksum02HSC6 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ BMSCounter02HSC6 : 51|4@0+ (1,0) [0|15] "count value"  ISC,SAC,TC,VCU
+ SG_ BMSFltLvlHSC6 : 3|3@0+ (1,0) [0|7] ""  TBOX,VCU
+ SG_ BMSHVILClsdHSC6 : 55|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ BMSMainRelaySts_h6HSC6 : 54|2@0+ (1,0) [0|3] ""  ISC,OBC_OnBoardCharger,SAC,TBOX,TC,VCU
+ SG_ BMSOfbdChrgRelayStsHSC6 : 17|2@0+ (1,0) [0|3] ""  Tester
+ SG_ BMSOnbdChrgRelayStsHSC6 : 19|2@0+ (1,0) [0|3] ""  Tester
+ SG_ BMSPtIsltnRstcHSC6 : 37|14@0+ (0.5,0) [0|8191.5] "kOhm"  TBOX,VCU
+ SG_ BMSPtIsltnRstcVHSC6 : 52|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ BMSVehEmgcPwrOffHSC6 : 23|4@0+ (1,0) [0|15] ""  Tester
+ SG_ OffbdChrgrSysKeepAwkHSC6 : 15|1@0+ (1,0) [0|1] ""  TBOX,Tester,VCU
+ SG_ OnbdChrgrSktEleccLckEHSC6 : 14|2@0+ (1,0) [0|3] ""  VCU
+ SG_ OnbdChrgrSysKeepAwkHSC6 : 0|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger,TBOX,Tester,VCU
+
+BO_ 369 BMS_HSC6_FrP03: 8 BMS
+ SG_ BMSChecksum03HSC6 : 63|8@0+ (1,0) [0|255] ""  ISC,SAC,TC
+ SG_ BMSChrgCrntLmtHSC6 : 41|10@0+ (1,-1023) [-1023|0] "A"  ISC,SAC,TC,VCU
+ SG_ BMSChrgCrntLmtVHSC6 : 42|1@0+ (1,0) [0|1] ""  ISC,SAC,TC,VCU
+ SG_ BMSCounter03HSC6 : 21|4@0+ (1,0) [0|15] "count value"  ISC,SAC,TC
+ SG_ BMSDschrgCrntLmtHSC6 : 39|10@0+ (1,0) [0|1023] "A"  ISC,SAC,TC,VCU
+ SG_ BMSDschrgCrntLmtVHSC6 : 45|1@0+ (1,0) [0|1] ""  ISC,SAC,TC,VCU
+ SG_ BMSMaxVolLmtHSC6 : 17|10@0+ (1,0) [0|1023] "V"  ISC,SAC,TC
+ SG_ BMSMaxVolLmtVHSC6 : 43|1@0+ (1,0) [0|1] ""  ISC,SAC,TC
+ SG_ BMSMinVolLmtHSC6 : 15|10@0+ (1,0) [0|1023] "V"  ISC,SAC,TC
+ SG_ BMSMinVolLmtVHSC6 : 44|1@0+ (1,0) [0|1] ""  ISC,SAC,TC
+
+BO_ 668 BMS_HSC6_FrP04: 8 BMS
+ SG_ ChargeCurrentHSC6 : 17|10@0+ (0.02,0) [0|20.44] "fail"  Tester
+ SG_ ChargePowerHSC6 : 47|8@0+ (0.05,0) [0|12.7] "kw"  Tester
+ SG_ ChargerCapacityHSC6 : 39|8@0+ (1,0) [0|254] "Ah"  Tester
+ SG_ ChargerInletTempHSC6 : 7|8@0+ (1,-40) [-40|214] "DegC"  Tester
+ SG_ ChargerModeHSC6 : 20|3@0+ (1,0) [0|7] ""  Tester
+ SG_ ChargerVoltageHSC6 : 15|9@0+ (1,0) [0|430] ""  Tester
+
+BO_ 665 BMS_HSC6_FrP06: 8 BMS
+ SG_ BMSFlameGasStatusHSC6 : 55|8@0+ (1,0) [0|255] "%"  Tester
+ SG_ BMSFltCtHSC6 : 63|8@0+ (1,0) [0|255] ""  Tester
+ SG_ BMSNegativeBusVoltHSC6 : 11|12@0+ (0.25,-500) [-500|523.25] "V"  Tester
+ SG_ BMSPackCurrent2HSC6 : 31|16@0+ (0.025,-1000) [-1000|638.325] "A"  Tester
+ SG_ BMSPackSOCActualHSC6 : 47|8@0+ (0.5,0) [0|126.5] "%"  Tester
+ SG_ BMSPositiveBusVoltHSC6 : 7|12@0+ (0.25,0) [0|1023.25] "V"  Tester
+
+BO_ 667 BMS_HSC6_FrP07: 8 BMS
+ SG_ BMSBusbarTempMaxHSC6 : 23|8@0+ (0.5,-40) [-40|86.5] "DegC"  Tester
+ SG_ BMSChgIndDriverStatHSC6 : 25|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSChrgrPlugCnctnIO_h6HSC6 : 6|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSChrgStsIO_h6HSC6 : 7|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSConIndDriverStatHSC6 : 24|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSLiquidSensorStHSC6 : 31|2@0+ (1,0) [0|3] ""  Tester
+ SG_ BMSPackSOHHSC6 : 1|10@0+ (0.1,0) [0|102.1] "%"  TBOX,Tester
+ SG_ BMSStaOfHealthCapctHSC6 : 47|8@0+ (0.5,0) [0|126.5] "%"  TBOX,Tester
+ SG_ BMSStaOfHealthResiHSC6 : 39|8@0+ (0.5,0) [0|126.5] "%"  TBOX,Tester
+
+BO_ 1100 BMS_HSC6_FrP08: 1 BMS
+ SG_ keep_network_BMSHSC6 : 0|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ keep_network_BMSHSC6_UB : 1|1@0+ (1,0) [0|1] ""  TBOX
+
+BO_ 370 BMS_HSC6_FrP09: 8 BMS
+ SG_ BMSChrgPeakPwrHSC6 : 34|11@0+ (0.2,0) [0|409.4] "kw"  VCU
+ SG_ BMSChrgPeakPwrVHSC6 : 35|1@0+ (1,0) [0|1] ""  VCU
+ SG_ BMSChrgPwrLmtHSC6 : 10|11@0+ (0.2,0) [0|409.4] "kw"  VCU
+ SG_ BMSChrgPwrLmtVHSC6 : 11|1@0+ (1,0) [0|1] ""  VCU
+ SG_ BMSDschrgPeakPwrHSC6 : 31|11@0+ (0.2,0) [0|409.4] "kw"  VCU
+ SG_ BMSDschrgPeakPwrVHSC6 : 36|1@0+ (1,0) [0|1] ""  VCU
+ SG_ BMSDschrgPwrLmtHSC6 : 7|11@0+ (0.2,0) [0|409.4] "kw"  VCU
+ SG_ BMSDschrgPwrLmtVHSC6 : 12|1@0+ (1,0) [0|1] ""  VCU
+
+BO_ 371 BMS_HSC6_FrP10: 8 BMS
+ SG_ BMSCellMaxVolHSC6 : 36|13@0+ (0.001,0) [0|8.191] "V"  TBOX,Tester
+ SG_ BMSCellMaxVolVHSC6 : 37|1@0+ (1,0) [0|1] ""  TBOX,Tester
+ SG_ BMSCellMinVolHSC6 : 52|13@0+ (0.001,0) [0|8.191] "V"  TBOX,Tester
+ SG_ BMSCellMinVolVHSC6 : 53|1@0+ (1,0) [0|1] ""  TBOX,Tester
+ SG_ BMSChrgBufHSC6 : 31|8@0+ (0.5,0) [0|127.5] "%"  VCU
+ SG_ BMSChrgBufVHSC6 : 39|1@0+ (1,0) [0|1] ""  VCU
+ SG_ BMSDschrgBufHSC6 : 23|8@0+ (0.5,0) [0|127.5] "%"  VCU
+ SG_ BMSDschrgBufVHSC6 : 38|1@0+ (1,0) [0|1] ""  VCU
+
+BO_ 674 BMS_HSC6_FrP11: 8 BMS
+ SG_ BMSCellMaxTemV_h6HSC6 : 23|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSCellMaxTem_h6HSC6 : 7|8@0+ (0.5,-40) [-40|87.5] "DegC"  TBOX
+ SG_ BMSCellMinTemV_h6HSC6 : 39|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSCellMinTem_h6HSC6 : 47|8@0+ (0.5,-40) [-40|87.5] "Deg C"  TBOX
+ SG_ BMSChrgReqHSC6 : 52|2@0+ (1,0) [0|3] ""  VCU
+ SG_ BMSOdoFctHSC6 : 31|8@0+ (0.5,0) [0|127.5] "%"  Tester
+ SG_ BMSOdoFctVHSC6 : 54|1@0+ (1,0) [0|1] ""  Tester
+ SG_ BMSOfbdChrgrPlugOn_h6HSC6 : 35|1@0+ (1,0) [0|1] ""  VCU
+ SG_ BMSOnbdChrgrPlugOn_h6HSC6 : 21|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ VehElecRng_h6HSC6 : 50|11@0+ (1,0) [0|2047] "km"  TBOX
+
+BO_ 939 BMS_HSC6_FrP12: 8 BMS
+ SG_ BMSAvlblEnrgV_h6HSC6 : 6|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ BMSAvlblEnrg_h6HSC6 : 47|8@0+ (0.4,0) [0|102] "kwh"  vector__xxx
+ SG_ HVBatElecEnrgAvgRate_h6HSC6 : 25|10@0+ (0.1,-20) [-20|82.3] "kwh/100km"  TBOX
+
+BO_ 940 BMS_HSC6_FrP13: 8 BMS
+ SG_ BMSPackSOCDspV_h6HSC6 : 37|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSPackSOCDsp_h6HSC6 : 17|10@0+ (0.1,0) [0|102.3] "%"  TBOX
+
+BO_ 913 BMS_HSC6_FrP14: 8 BMS
+ SG_ BMSChrgngRmnngStTime_h6HSC6 : 42|11@0+ (1,0) [0|2047] "minute"  TBOX
+ SG_ BMSChrgSts_h6HSC6 : 39|4@0+ (1,0) [0|15] ""  TBOX
+ SG_ BMSReserDurtnTimeDspCmd_h6HSC6 : 15|6@0+ (0.5,0) [0|20] ""  TBOX
+ SG_ BMSReserPushItemHSC6 : 47|5@0+ (1,0) [0|31] ""  TBOX
+ SG_ BMSReserStDurtnTimeDspCmdHSC6 : 31|5@0+ (1,0) [0|23] ""  TBOX
+ SG_ BMSReserStHourDspCmd_h6HSC6 : 23|5@0+ (1,0) [0|23] ""  TBOX
+ SG_ BMSReserStMinuteDspCmdHSC6 : 7|6@0+ (1,0) [0|59] ""  TBOX
+
+BO_ 915 BMS_HSC6_FrP15: 8 BMS
+ SG_ BMSReserChrgCtrlDspCmdHSC6 : 63|3@0+ (1,0) [0|7] ""  TBOX
+ SG_ BMSReserChrgEnrgDspCmd_h6HSC6 : 39|6@0+ (1,0) [0|63] ""  TBOX
+ SG_ BMSReserChrgFltReasonHSC6 : 7|16@0+ (1,0) [0|65535] ""  TBOX
+ SG_ BMSReserChrgFrqcDspCmdHSC6 : 23|2@0+ (1,0) [0|3] ""  TBOX
+ SG_ BMSReserChrgMdDspCmd_h6HSC6 : 21|3@0+ (1,0) [0|7] ""  TBOX
+ SG_ BMSReserChrgRespVHSC6 : 18|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ BMSReserChrgRngDspCmd_h6HSC6 : 17|10@0+ (1,0) [0|1023] ""  TBOX
+ SG_ BMSReserFltReasonHSC6 : 60|3@0+ (1,0) [0|7] ""  TBOX
+ SG_ BMSReserMaxCrntDspCmd_h6HSC6 : 55|6@0+ (1,0) [0|32] ""  TBOX
+ SG_ BMSReserStaDspCmdHSC6 : 49|2@0+ (1,0) [0|3] ""  TBOX
+ SG_ BMSReserTrgtSOCDspCmd_h6HSC6 : 33|10@0+ (0.1,0) [0|102.3] ""  TBOX
+
+BO_ 936 BMS_HSC6_FrP16: 8 BMS
+ SG_ BMSWrlsChrgnFltReason_h6HSC6 : 37|4@0+ (1,0) [0|15] ""  TBOX
+ SG_ BMSWrlsChrgngResp_h6HSC6 : 13|3@0+ (1,0) [0|7] ""  TBOX
+ SG_ ChrgngRmnngTimeV_h6HSC6 : 54|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ ChrgngRmnngTime_h6HSC6 : 31|10@0+ (1,0) [0|1023] "min"  TBOX
+
+BO_ 820 BMS_HSC6_FrP17: 8 BMS
+ SG_ BMSWkupWrlsChrgrHSC6 : 54|1@0+ (1,0) [0|1] ""  WLC
+ SG_ BMSWrlsChrgngCmd_oldHSC6 : 38|2@0+ (1,0) [0|3] ""  WLC
+ SG_ BMSWrlsChrgngFltHSC6 : 55|1@0+ (1,0) [0|1] ""  WLC
+ SG_ BMSWrlsChrgngInptCrntLmtHSC6 : 7|8@0+ (0.5,0) [0|127.5] "A"  WLC
+ SG_ BMSWrlsChrgngMdHSC6 : 36|3@0+ (1,0) [0|7] ""  WLC
+ SG_ BMSWrlsChrgngOtptCrntHSC6 : 33|10@0+ (0.05,0) [0|51.15] "A"  WLC
+ SG_ BMSWrlsChrgngOtptPwrHSC6 : 31|8@0+ (0.05,0) [0|12.7] "kW"  WLC
+ SG_ BMSWrlsChrgngOtptVolHSC6 : 14|15@0+ (0.02,0) [0|655.32] "V"  WLC
+ SG_ BMSWrlsChrgngSftyHSC6 : 39|1@0+ (1,0) [0|1] ""  WLC
+ SG_ BMSWrlsChrgrFltHSC6 : 15|1@0+ (1,0) [0|1] ""  WLC
+
+BO_ 672 BMS_HSC6_FrP18: 8 BMS
+ SG_ BMSChksmHSC6 : 63|8@0+ (1,0) [0|255] ""  PTC
+ SG_ BMSEnbPTCHSC6 : 45|1@0+ (1,0) [0|1] ""  PTC
+ SG_ BMSInptClntTemHSC6 : 24|9@0+ (0.5,-40) [-40|200] ""  PTC
+ SG_ BMSReqMdHSC6 : 47|2@0+ (1,0) [0|3] ""  PTC
+ SG_ BMSReqPWMHSC6 : 31|7@0+ (1,0) [0|100] ""  PTC
+ SG_ BMSReqPwrHSC6 : 15|16@0+ (1,0) [0|65535] ""  PTC
+ SG_ BMSReqRlngCtrHSC6 : 7|4@0+ (1,0) [0|15] ""  PTC
+ SG_ BMSReqTapPosHSC6 : 3|4@0+ (1,0) [0|15] ""  PTC
+
+BO_ 962 BMS_HSC6_FrP19: 8 BMS
+ SG_ CalDataHSC6 : 47|24@0+ (1,0) [0|16777200] ""  Tester
+ SG_ ErIndHSC6 : 32|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ErInfoHSC6 : 39|7@0+ (1,0) [0|127] ""  Tester
+ SG_ PriyCrntValHSC6 : 7|32@0+ (1,-214748000) [-214748000|214749000] ""  Tester
+
+BO_ 831 BMS_HSC6_FrP20: 8 BMS
+ SG_ BMSChrgngMdHSC6 : 47|3@0+ (1,0) [0|7] ""  OBC_OnBoardCharger
+ SG_ BMSChrgrAltCrntLmtHSC6 : 23|8@0+ (0.5,0) [0|127.5] ""  OBC_OnBoardCharger
+ SG_ BMSChrgrOtptCrntHSC6 : 41|10@0+ (0.05,0) [0|51.15] "A"  vector__xxx
+ SG_ BMSChrgrOtptPwrHSC6 : 31|8@0+ (0.05,0) [0|12.7] "kw"  vector__xxx
+ SG_ BMSChrgrOtptVolHSC6 : 6|15@0+ (0.02,0) [0|655.32] "V"  vector__xxx
+ SG_ BMSOnbdChrgngCmdHSC6 : 44|3@0+ (1,0) [0|7] ""  OBC_OnBoardCharger
+ SG_ BMSOnBdChrgngFltHSC6 : 60|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ BMSOnBdChrgngNotSftyHSC6 : 61|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ BMSOnBdChrgrClntTemHSC6 : 39|8@0+ (1,-40) [-40|214] "DegC"  OBC_OnBoardCharger
+ SG_ BMSOnBdChrgrFltHSC6 : 7|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ BMSOnBdChrgrSktElecClkStsHSC6 : 63|2@0+ (1,0) [0|3] ""  OBC_OnBoardCharger
+
+BO_ 960 BMS_HSC6_FrP21: 8 BMS
+ SG_ BMSReqChrgrOtptCrntHSC6 : 25|10@0+ (0.05,0) [0|51.15] "A"  OBC_OnBoardCharger
+ SG_ BMSReqChrgrOtptPwrHSC6 : 23|8@0+ (0.05,0) [0|12.7] "kw"  OBC_OnBoardCharger
+ SG_ BMSReqChrgrOtptVolHSC6 : 6|15@0+ (0.02,0) [0|655.32] "V"  OBC_OnBoardCharger
+
+BO_ 1091 BMS_HSC6_FrS00: 1 BMS
+ SG_ wake_network_BMSHSC6 : 0|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ wake_network_BMSHSC6_UB : 1|1@0+ (1,0) [0|1] ""  TBOX
+
+BO_ 497 BMS_HSC6_GW_FrP01: 8 BMS
+ SG_ BPMMstrAvlbly_h1HSC6 : 35|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ PwrMdMstrAccryA_h1HSC6 : 2|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ PwrMdMstrRunCrkA_h1HSC6 : 3|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ SysOpnlMd_h1HSC6 : 6|3@0+ (1,0) [0|7] ""  OBC_OnBoardCharger
+ SG_ SysPwrMdV_h1HSC6 : 33|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ SysPwrMd_h1HSC6 : 1|2@0+ (1,0) [0|3] ""  OBC_OnBoardCharger
+ SG_ SysVolMdV_h1HSC6 : 7|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ SysVolMd_h1HSC6 : 58|2@0+ (1,0) [0|3] ""  OBC_OnBoardCharger
+ SG_ SysVolV_h1HSC6 : 32|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ SysVol_h1HSC6 : 47|8@0+ (0.1,3) [3|28.5] "V"  OBC_OnBoardCharger
+
+BO_ 1344 BMS_HSC6_GW_FrP08: 8 BMS
+ SG_ VehOdoV_h1HSC6 : 31|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+ SG_ VehOdo_h1HSC6 : 7|24@0+ (1,0) [0|16777200] ""  OBC_OnBoardCharger
+
+BO_ 851 BMS_HSC6_SCS_FrP15: 8 BMS
+ SG_ VehSpdAvgDrvnHSC6 : 6|15@0+ (0.015625,0) [0|511.984] "km/h"  OBC_OnBoardCharger
+ SG_ VehSpdAvgDrvnVHSC6 : 7|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+
+BO_ 827 Charger_HSC6_FrP01: 8 OBC_OnBoardCharger
+ SG_ OnBdChrgrCtrlPilotPWMDutyHSC6 : 6|7@0+ (1,0) [0|100] "%"  BMS
+ SG_ OnBdChrgrFltCtHSC6 : 15|8@0+ (1,0) [0|255] ""  BMS,Tester
+ SG_ OnBdChrgrFltStsHSC6 : 23|8@0+ (1,0) [0|255] ""  BMS,Tester
+ SG_ OnBdChrgrInsdTem3HSC6 : 31|8@0+ (1,-40) [-40|214] "DegC"  BMS
+ SG_ OnBdChrgrLastWkupHSC6 : 55|1@0+ (1,0) [0|1] ""  BMS
+ SG_ OnBdChrgrOtptVolHSC6 : 54|15@0+ (0.02,0) [0|655.32] "V"  BMS
+ SG_ OnBdChrgrSktNgtvSnsrTemHSC6 : 39|8@0+ (1,-40) [-40|214] "DegC"  BMS
+ SG_ OnBdChrgrSktPstvSnsrTemHSC6 : 47|8@0+ (1,-40) [-40|214] "DegC"  BMS
+ SG_ OnBdChrgrWkupHSC6 : 7|1@0+ (1,0) [0|1] ""  BMS
+
+BO_ 829 Charger_HSC6_FrP02: 8 OBC_OnBoardCharger
+ SG_ OnBdChrgngSpRsnHSC6 : 28|2@0+ (1,0) [0|3] ""  BMS
+ SG_ OnBdChrgrAltrCrntInptCrntHSC6 : 7|8@0+ (0.2,0) [0|51] "A"  BMS
+ SG_ OnBdChrgrAltrCrntInptVolHSC6 : 15|8@0+ (2,0) [0|508] "V"  BMS
+ SG_ OnBdChrgrClntPumpDutyHSC6 : 19|4@0+ (1,0) [0|15] ""  BMS
+ SG_ OnBdChrgrCtrlPilotPWMStsHSC6 : 31|3@0+ (1,0) [0|7] ""  BMS
+ SG_ OnBdChrgrHVILStsHSC6 : 26|1@0+ (1,0) [0|1] ""  BMS
+ SG_ OnBdChrgrOtptCrntHSC6 : 25|10@0+ (0.05,0) [0|51.15] "A"  BMS
+ SG_ OnBdChrgrStsHSC6 : 23|4@0+ (1,0) [0|15] ""  BMS
+
+BO_ 1806 DIAG_DTCInfo_Charger: 7 OBC_OnBoardCharger
+ SG_ DTCInfomationChargerHSC6 : 7|56@0+ (1,0) [0|0] ""  Diagnostics,TBOX
+
+BO_ 2015 DIAG_FuncReq_HSC6: 8 Diagnostics
+ SG_ DiagnosticFuncAddrReq_h6 : 7|64@0+ (1,0) [0|0] ""  OBC_OnBoardCharger,TBOX
+
+BO_ 1924 DIAG_PhysReq_Charger: 8 Diagnostics
+ SG_ DiagnosticReqCharger : 7|64@0+ (1,0) [0|0] ""  OBC_OnBoardCharger,TBOX
+
+BO_ 1926 DIAG_PhysReq_GSMC: 8 Diagnostics
+ SG_ DiagnosticReqGSMC : 7|64@0+ (1,0) [0|0] ""  vector__xxx
+
+BO_ 1932 DIAG_PhysResp_Charger: 8 OBC_OnBoardCharger
+ SG_ DiagnosticRespCharger : 7|64@0+ (1,0) [0|0] ""  Diagnostics
+
+BO_ 1712 HCUT_HSC6_CCP_1: 8 Tester
+ SG_ HCUT_CCP_1HSC6 : 7|64@0+ (1,0) [0|0] ""  VCU
+
+BO_ 1713 HCU_HSC6_CCP_1: 8 VCU
+ SG_ HCU_CCP_1HSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 1714 HCU_HSC6_CCP_2: 8 VCU
+ SG_ HCU_CCP_2HSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 1715 HCU_HSC6_CCP_3: 8 VCU
+ SG_ HCU_CCP_3HSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 1716 HCU_HSC6_CCP_4: 8 VCU
+ SG_ HCU_CCP_4HSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 143 HCU_HSC6_Dev01: 8 VCU
+ SG_ HCU_InternalSignalHSC6 : 7|64@0+ (1,0) [0|0] ""  vector__xxx
+
+BO_ 916 HCU_HSC6_FrP01: 8 VCU
+ SG_ EPTChrgCoolngSysStsHSC6 : 35|3@0+ (1,0) [0|7] ""  BMS
+ SG_ HCUChecksum01HSC6 : 63|8@0+ (1,0) [0|255] ""  ISC,TC
+ SG_ HCUCounter01HSC6 : 51|4@0+ (1,0) [0|15] ""  ISC,TC
+ SG_ OfbdChrgrNgtvSktTemHSC6 : 47|8@0+ (1,-40) [-40|215] "¡æ"  BMS
+ SG_ OfbdChrgrNgtvSktTemVHSC6 : 32|1@0+ (1,0) [0|1] ""  BMS
+ SG_ OfbdChrgrPstvSktTemHSC6 : 15|8@0+ (1,-40) [-40|215] "¡æ"  BMS
+ SG_ OfbdChrgrPstvSktTemVHSC6 : 38|1@0+ (1,0) [0|1] ""  BMS
+ SG_ OnbdChrgrSktEleccLckSHSC6 : 37|2@0+ (1,0) [0|3] ""  BMS
+ SG_ TMOfstAngCalCndHSC6 : 31|8@0+ (1,0) [1|254] ""  TC
+
+BO_ 142 HCU_HSC6_FrP04: 8 VCU
+ SG_ EPTTMMaxToqLmtHSC6 : 10|11@0+ (1,-1024) [-1024|1023] "Nm"  TC
+ SG_ EPTTMMaxToqLmtVHSC6 : 11|1@0+ (1,0) [0|1] ""  TC
+ SG_ EPTTMMinToqLmtHSC6 : 7|11@0+ (1,-1024) [-1024|1023] "Nm"  TC
+ SG_ EPTTMMinToqLmtVHSC6 : 12|1@0+ (1,0) [0|1] ""  TC
+ SG_ EPTTMToqSlewRateHSC6 : 39|16@0+ (2,0) [0|131070] "Nm/s"  TC
+ SG_ EPTTMToqSlewRateVHSC6 : 55|1@0+ (1,0) [0|1] ""  TC
+ SG_ HCUChecksum04HSC6 : 63|8@0+ (1,0) [0|255] ""  TC
+ SG_ HCUCounter04HSC6 : 51|4@0+ (1,0) [0|15] ""  TC
+
+BO_ 138 HCU_HSC6_FrP05: 8 VCU
+ SG_ ElecMotEmgcShutDwnHSC6 : 47|1@0+ (1,0) [0|1] ""  ISC,SAC,TBOX,TC
+ SG_ EPTHVBatPwrRlseReqHSC6 : 43|1@0+ (1,0) [0|1] ""  BMS
+ SG_ EPTHVEmgcPwrOffReqHSC6 : 40|1@0+ (1,0) [0|1] ""  BMS,TBOX
+ SG_ EPTMainRelayDrvReqHSC6 : 42|2@0+ (1,0) [0|3] ""  BMS,Tester
+ SG_ EPTTMDmpngCtrlReqHSC6 : 44|1@0+ (1,0) [0|1] ""  TC
+ SG_ EPTTMMdReqHSC6 : 55|4@0+ (1,0) [0|15] ""  TC
+ SG_ EPTTMSpdReqHSC6 : 7|16@0+ (1,-32768) [-32768|32767] "rpm"  TC
+ SG_ EPTTMToqReqHSC6 : 26|11@0+ (0.5,-512) [-512|511.5] "Nm"  TC
+ SG_ HCUChecksum05HSC6 : 63|8@0+ (1,0) [0|255] ""  BMS,ISC,TC
+ SG_ HCUCounter05HSC6 : 51|4@0+ (1,0) [0|15] ""  BMS,ISC,TC
+
+BO_ 251 HCU_HSC6_FrP07: 8 VCU
+ SG_ EPTStCmdOn_h6HSC6 : 17|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+
+BO_ 406 HCU_HSC6_FrP08: 8 VCU
+ SG_ EPTRdy_h6HSC6 : 38|1@0+ (1,0) [0|1] ""  OBC_OnBoardCharger
+
+BO_ 922 HCU_HSC6_FrP20: 8 VCU
+ SG_ HCUOnbdChrgrSktNgtvSnsrTemHSC6 : 15|8@0+ (1,-40) [-40|215] "DegC"  BMS
+
+BO_ 1664 ISC_HSC2_DvP01: 8 ISC
+ SG_ ISGPhaseCurrentHSC6 : 7|16@0+ (0.0625,-2048) [0|65535] "A"  Tester
+
+BO_ 1680 ISC_HSC6_DvP02: 8 ISC
+ SG_ ISGDernOverIdcHSC6 : 15|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernOverTempHSC6 : 14|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernOverUdcHSC6 : 13|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernTqMaxHSC6 : 12|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernTqMinHSC6 : 11|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernUnderIdcHSC6 : 10|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGDernUnderUdcHSC6 : 9|1@0+ (1,0) [0|1] ""  Tester
+ SG_ ISGImmoResultHSC6 : 8|1@0+ (1,0) [0|1] ""  TBOX
+
+BO_ 147 ISC_HSC6_FrP03: 8 ISC
+ SG_ ISGActuToqHSC6 : 42|11@0+ (0.5,-512) [-512|511.5] "Nm"  vector__xxx
+ SG_ ISGActuToqV_h6HSC6 : 2|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGAltngCircuitShrtCRHSC6 : 43|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGChecksum03HSC6 : 63|8@0+ (1,0) [0|255] ""  vector__xxx
+ SG_ ISGClntPumpPWMReqHSC6 : 39|8@0+ (0.4,0) [0|102] "%"  vector__xxx
+ SG_ ISGCounter03HSC6 : 15|4@0+ (1,0) [0|15] ""  vector__xxx
+ SG_ ISGOfstAngCalReqHSC6 : 44|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGSpdHSC6 : 23|16@0+ (1,-32768) [-32768|32767] "rpm"  TBOX
+ SG_ ISGSpdVHSC6 : 3|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ ISGSta_h6HSC6 : 11|4@0+ (1,0) [0|15] ""  vector__xxx
+
+BO_ 150 ISC_HSC6_FrP04: 8 ISC
+ SG_ ISGChecksum04HSC6 : 63|8@0+ (1,0) [0|255] ""  vector__xxx
+ SG_ ISGCounter04HSC6 : 47|4@0+ (1,0) [0|15] ""  vector__xxx
+ SG_ ISGDmpngCtrlAHSC6 : 27|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGInvtrCrntHSC6 : 7|11@0+ (1,-1024) [-1024|1023] "A"  BMS
+ SG_ ISGInvtrCrntVHSC6 : 12|1@0+ (1,0) [0|1] ""  BMS
+ SG_ ISGMaxAvlblToqHSC6 : 10|11@0+ (1,-1024) [-1024|1023] "Nm"  vector__xxx
+ SG_ ISGMaxAvlblToqVHSC6 : 11|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGMinAvlblToqHSC6 : 26|11@0+ (1,-1024) [-1024|1023] "Nm"  vector__xxx
+ SG_ ISGMinAvlblToqVHSC6 : 43|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGNoDmpngCtrlToqHSC6 : 42|11@0+ (1,-1024) [-1024|1023] "Nm"  vector__xxx
+
+BO_ 919 ISC_HSC6_FrP05: 8 ISC
+ SG_ ISGChecksum05HSC6 : 63|8@0+ (1,0) [0|255] ""  vector__xxx
+ SG_ ISGCounter05HSC6 : 39|4@0+ (1,0) [0|15] ""  vector__xxx
+ SG_ ISGFltIOHSC6 : 32|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ ISGHVInhdHSC6 : 35|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ ISGInvtrTemHSC6 : 31|8@0+ (1,-40) [-40|215] "DegC"  TBOX
+ SG_ ISGOvhtdHSC6 : 7|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ ISGSttrTemHSC6 : 55|8@0+ (1,-40) [-40|215] "DegC"  TBOX
+ SG_ ISGToqDrtngHSC6 : 6|1@0+ (1,0) [0|1] ""  vector__xxx
+
+BO_ 920 ISC_HSC6_FrP06: 8 ISC
+ SG_ ISGFlr1HSC6 : 7|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr2HSC6 : 15|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr3HSC6 : 23|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr4HSC6 : 31|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr5HSC6 : 39|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr6HSC6 : 47|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr7HSC6 : 55|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ ISGFlr8HSC6 : 63|8@0+ (1,0) [0|255] ""  TBOX
+
+BO_ 917 ISC_HSC6_FrP07: 8 ISC
+ SG_ ISGHVRdyHSC6 : 39|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ ISGInvtrClntTemHSC6 : 7|8@0+ (1,-40) [-40|215] "Deg C"  TBOX
+ SG_ ISGInvtrVolHSC6 : 49|10@0+ (1,0) [0|1021] "V"  BMS
+ SG_ ISGInvtrVolVHSC6 : 50|1@0+ (1,0) [0|1] ""  BMS
+ SG_ ISGOfstAngHSC6 : 15|16@0+ (0.01,0) [0|655.35] "Degree"  TBOX
+ SG_ ISGRtrTemHSC6 : 31|8@0+ (1,-40) [-40|215] "DegC"  TBOX
+
+BO_ 693 PTC_HSC6_FrP00: 8 PTC
+ SG_ PTCActuCrntHSC6 : 23|10@0+ (0.1,-20) [-20|82] ""  BMS
+ SG_ PTCActuPwrHSC6 : 39|16@0+ (1,0) [0|65535] ""  BMS
+ SG_ PTCChksmHSC6 : 63|8@0+ (1,0) [0|255] ""  BMS
+ SG_ PTCDTCHSC6 : 51|4@0+ (1,0) [0|15] ""  BMS
+ SG_ PTCHVLckStsHSC6 : 54|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCIGBTOverHeatHSC6 : 55|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCIGBTStsHSC6 : 53|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCOverCrntHSC6 : 2|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCOverHeatHSC6 : 1|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCOverVolHSC6 : 3|1@0+ (1,0) [0|1] ""  BMS
+ SG_ PTCPCBTemHSC6 : 0|9@0+ (0.5,-40) [-40|200] ""  BMS
+ SG_ PTCRlngCtrHSC6 : 7|4@0+ (1,0) [0|15] ""  BMS
+ SG_ PTCUnderVolHSC6 : 52|1@0+ (1,0) [0|1] ""  BMS
+
+BO_ 694 PTC_HSC6_FrP01: 8 PTC
+ SG_ PTCActuPWMDutyHSC6 : 15|8@0+ (0.5,0) [0|100] ""  BMS
+ SG_ PTCActuVolHSC6 : 23|10@0+ (0.5,100) [100|500] ""  BMS
+ SG_ PTCIGBTOvallStsHSC6 : 1|2@0+ (1,0) [0|3] ""  BMS
+ SG_ PTCIGBTTemHSC6 : 26|9@0+ (0.5,-40) [-40|200] ""  BMS
+ SG_ PTCInptTemHSC6 : 33|9@0+ (0.5,-40) [-40|200] ""  BMS
+ SG_ PTCNTCStsHSC6 : 29|3@0+ (1,0) [0|7] ""  BMS
+ SG_ PTCOtptTemHSC6 : 40|9@0+ (0.5,-40) [-40|200] ""  BMS
+ SG_ PTCSecChksmHSC6 : 63|8@0+ (1,0) [0|255] ""  BMS
+ SG_ PTCSecRlngCtrHSC6 : 7|4@0+ (1,0) [0|15] ""  BMS
+
+BO_ 1031 SAC_HSC6_Dev_FrP00: 8 SAC
+ SG_ SAMDernOverIdcHSC6 : 62|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernOverTempHSC6 : 61|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernOverUdcHSC6 : 60|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernTqMaxHSC6 : 59|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernTqMinHSC6 : 58|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernUnderIdcHSC6 : 57|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMDernUnderUdcHSC6 : 56|1@0+ (1,0) [0|1] ""  vector__xxx
+
+BO_ 221 SAC_HSC6_FrP01: 8 SAC
+
+BO_ 222 SAC_HSC6_FrP02: 8 SAC
+
+BO_ 924 SAC_HSC6_FrP03: 8 SAC
+
+BO_ 797 SAC_HSC6_FrP04: 8 SAC
+ SG_ SAMFlr1HSC6 : 7|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr2HSC6 : 15|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr3HSC6 : 23|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr4HSC6 : 31|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr5HSC6 : 39|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr6HSC6 : 47|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr7HSC6 : 55|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ SAMFlr8HSC6 : 63|8@0+ (1,0) [0|255] ""  TBOX
+
+BO_ 926 SAC_HSC6_FrP07: 8 SAC
+ SG_ SAMHVRdyHSC6 : 39|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ SAMImmoResultHSC6 : 38|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ SAMInvtrClntTemHSC6 : 7|8@0+ (1,-40) [-40|215] "DegC"  TBOX
+ SG_ SAMInvtrVolHSC6 : 33|10@0+ (1,0) [0|1023] "V"  vector__xxx
+ SG_ SAMInvtrVolVHSC6 : 34|1@0+ (1,0) [0|1] ""  vector__xxx
+ SG_ SAMOfstAngHSC6 : 15|16@0+ (0.01,0) [0|655.35] "Degree"  TBOX
+ SG_ SAMRtrTemHSC6 : 31|8@0+ (1,-40) [-40|215] "DegC"  TBOX
+
+BO_ 1053 TBOX_HSC6_FrP00: 8 TBOX
+ SG_ TBOXUnvslTimeCalendarDHSC6 : 20|5@0+ (1,0) [0|31] "day"  BMS,OBC_OnBoardCharger
+ SG_ TBOXUnvslTimeCalendarMHSC6 : 11|4@0+ (1,0) [0|15] ""  BMS,OBC_OnBoardCharger
+ SG_ TBOXUnvslTimeCalendarYHSC6 : 7|8@0+ (1,2000) [2000|2255] "year"  BMS,OBC_OnBoardCharger
+ SG_ TBOXUnvslTimeChksmHSC6 : 63|8@0+ (1,0) [0|255] ""  BMS
+ SG_ TBOXUnvslTimeHourOfDayHSC6 : 28|5@0+ (1,0) [0|31] ""  BMS,OBC_OnBoardCharger
+ SG_ TBOXUnvslTimeMinuteOfHHSC6 : 37|6@0+ (1,0) [0|63] ""  BMS,OBC_OnBoardCharger
+ SG_ TBOXUnvslTimeSecOfMHSC6 : 45|6@0+ (1,0) [0|63] ""  BMS,OBC_OnBoardCharger
+
+BO_ 854 TBOX_HSC6_FrP06: 8 TBOX
+ SG_ TBOXReserDurtnTimeHSC6 : 45|6@0+ (0.5,0) [0|20] ""  BMS
+ SG_ TBOXReserStDayHSC6 : 20|5@0+ (1,0) [0|31] ""  BMS
+ SG_ TBOXReserStDurtnTimeHSC6 : 52|5@0+ (1,0) [0|23] ""  BMS
+ SG_ TBOXReserStHourHSC6 : 28|5@0+ (1,0) [0|23] ""  BMS
+ SG_ TBOXReserStMinuteHSC6 : 37|6@0+ (1,0) [0|59] ""  BMS
+ SG_ TBOXReserStMonthHSC6 : 11|4@0+ (1,0) [0|15] ""  BMS
+ SG_ TBOXReserStTimeChksmHSC6 : 63|8@0+ (1,0) [0|255] ""  BMS
+ SG_ TBOXReserStYearHSC6 : 7|8@0+ (1,2000) [2000|2255] ""  BMS
+
+BO_ 856 TBOX_HSC6_FrP07: 8 TBOX
+ SG_ TBOXReserChrgCtrlReqHSC6 : 12|3@0+ (1,0) [0|7] ""  BMS
+ SG_ TBOXReserChrgEnrgHSC6 : 31|6@0+ (1,0) [0|63] ""  BMS
+ SG_ TBOXReserChrgFrqcHSC6 : 7|2@0+ (1,0) [0|3] ""  BMS
+ SG_ TBOXReserChrgMdReqHSC6 : 15|3@0+ (1,0) [0|7] ""  BMS
+ SG_ TBOXReserChrgRngHSC6 : 9|10@0+ (1,0) [0|1023] ""  BMS
+ SG_ TBOXReserMaxCrntHSC6 : 5|6@0+ (1,0) [0|32] ""  BMS
+ SG_ TBOXReserTrgtSOCHSC6 : 25|10@0+ (0.1,0) [0|102.3] ""  BMS
+ SG_ TBOXWrlsChrgngReqHSC6 : 47|2@0+ (1,0) [0|3] ""  BMS
+
+BO_ 1055 TBOX_HSC6_NWM: 3 TBOX
+ SG_ network_mode_h6 : 7|8@0+ (1,0) [0|255] ""  BMS
+ SG_ signal_config_id_h6 : 15|16@0+ (1,0) [0|65535] ""  BMS
+
+BO_ 1682 TC_HSC6_DvP02: 8 TC
+ SG_ TMDernOverIdcHSC6 : 15|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernOverTempHSC6 : 14|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernOverUdcHSC6 : 13|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernTqMaxHSC6 : 12|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernTqMinHSC6 : 11|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernUnderIdcHSC6 : 9|1@0+ (1,0) [0|1] ""  Tester
+ SG_ TMDernUnderUdcHSC6 : 10|1@0+ (1,0) [0|1] ""  Tester
+
+BO_ 148 TC_HSC6_FrP01: 8 TC
+ SG_ TMActuToqHSC6 : 18|11@0+ (0.5,-512) [-512|510.5] "Nm"  TBOX,VCU
+ SG_ TMActuToqVHSC6 : 53|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ TMChecksum01HSC6 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ TMCounter01HSC6 : 22|4@0+ (1,0) [0|15] ""  VCU
+ SG_ TMOvhtdHSC6 : 54|1@0+ (1,0) [0|1] ""  VCU
+ SG_ TMRawSpdHSC6 : 39|16@0+ (1,-32768) [-32768|32767] "rpm"  VCU
+ SG_ TMSpdV_h6HSC6 : 23|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ TMSpd_h6HSC6 : 7|16@0+ (1,-32768) [-32768|32767] "rpm"  TBOX,VCU
+ SG_ TMSta_h6HSC6 : 51|4@0+ (1,0) [0|15] ""  TBOX,VCU
+ SG_ TMToqDrtngHSC6 : 55|1@0+ (1,0) [0|1] ""  VCU
+
+BO_ 153 TC_HSC6_FrP02: 8 TC
+ SG_ TMAShrtCircuitRdyHSC6 : 49|1@0+ (1,0) [0|1] ""  VCU
+ SG_ TMChecksum02HSC6 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ TMCounter02HSC6 : 11|4@0+ (1,0) [0|15] ""  VCU
+ SG_ TMDmpngCtrlAHSC6 : 51|1@0+ (1,0) [0|1] ""  VCU
+ SG_ TMInvtrCrntHSC6 : 23|11@0+ (1,-1024) [-1024|1023] "A"  BMS,TBOX,VCU
+ SG_ TMInvtrCrntVHSC6 : 28|1@0+ (1,0) [0|1] ""  BMS,TBOX,VCU
+ SG_ TMMaxAvlblToqHSC6 : 7|11@0+ (1,-1024) [-1024|1023] "Nm"  VCU
+ SG_ TMMaxAvlblToqVHSC6 : 12|1@0+ (1,0) [0|1] ""  VCU
+ SG_ TMMinAvlblToqHSC6 : 47|11@0+ (1,-1024) [-1024|1023] "Nm"  VCU
+ SG_ TMMinAvlblToqVHSC6 : 52|1@0+ (1,0) [0|1] ""  VCU
+ SG_ TMNoDmpngCtrlToqHSC6 : 26|11@0+ (1,-1024) [-1024|1023] "Nm"  VCU
+ SG_ TMOfstAngCalReqHSC6 : 50|1@0+ (1,0) [0|1] ""  VCU
+
+BO_ 923 TC_HSC6_FrP03: 8 TC
+ SG_ TMChecksum03HSC6 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ TMClntPumpPWMReqHSC6 : 23|8@0+ (0.4,0) [0|102] "%"  VCU
+ SG_ TMCounter03HSC6 : 53|4@0+ (1,0) [0|15] ""  VCU
+ SG_ TMFltIOHSC6 : 54|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ TMHVInhdHSC6 : 49|1@0+ (1,0) [0|1] ""  TBOX,VCU
+ SG_ TMInvtrTemHSC6 : 7|8@0+ (1,-40) [-40|215] "Deg C"  TBOX,VCU
+ SG_ TMSttrTemHSC6 : 15|8@0+ (1,-40) [-40|215] "Deg C"  TBOX,VCU
+
+BO_ 934 TC_HSC6_FrP04: 8 TC
+ SG_ TMFlr1HSC6 : 7|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr2HSC6 : 15|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr3HSC6 : 23|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr4HSC6 : 31|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr5HSC6 : 39|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr6HSC6 : 47|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr7HSC6 : 55|8@0+ (1,0) [0|255] ""  TBOX
+ SG_ TMFlr8HSC6 : 63|8@0+ (1,0) [0|255] ""  TBOX
+
+BO_ 918 TC_HSC6_FrP07: 8 TC
+ SG_ TMHVRdyHSC6 : 39|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ TMImmoResultHSC6 : 38|1@0+ (1,0) [0|1] ""  TBOX
+ SG_ TMInvtrClntTemHSC6 : 7|8@0+ (1,-40) [-40|215] "Deg C"  TBOX
+ SG_ TMOfstAngHSC6 : 15|16@0+ (0.01,0) [0|655.35] "Degree"  TBOX
+ SG_ TMRtrTemHSC6 : 31|8@0+ (1,-40) [-40|215] "Deg C"  TBOX
+
+BO_ 331 TC_HSC6_FrP08: 8 TC
+ SG_ TMInvtrVolHSC6 : 1|10@0+ (1,0) [0|1023] "V"  BMS,TBOX
+ SG_ TMInvtrVolVHSC6 : 2|1@0+ (1,0) [0|1] ""  BMS,TBOX
+
+BO_ 404 VCU_HSC6_ECM_FrP04: 8 VCU
+ SG_ TrShftLvrPosV_h6HSC6 : 28|1@0+ (1,0) [0|1] ""  WLC
+ SG_ TrShftLvrPos_h6HSC6 : 27|4@0+ (1,0) [0|15] ""  WLC
+
+BO_ 1555 WLC_HSC6_Dev1: 8 WLC
+ SG_ WLC_Dev1_TesterHSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 1556 WLC_HSC6_Dev2: 8 WLC
+ SG_ WLC_Dev2_TesterHSC6 : 7|64@0+ (1,0) [0|0] ""  Tester
+
+BO_ 818 WLC_HSC6_FrP00: 8 WLC
+ SG_ CoxtyBtwnPriyAndSecyCoilFltHSC6 : 23|2@0+ (1,0) [0|3] ""  TBOX
+ SG_ CoxtyOfstPosOnXAxisHSC6 : 7|8@0+ (1,-127) [-127|127] ""  BMS,TBOX
+ SG_ CoxtyOfstPosOnYAxisHSC6 : 15|8@0+ (1,-127) [-127|127] ""  BMS,TBOX
+ SG_ FornObjDetHSC6 : 31|2@0+ (1,0) [0|3] ""  BMS,TBOX
+ SG_ FornObjPosDetOnXAxisHSC6 : 21|6@0+ (1,0) [0|63] ""  BMS,TBOX
+ SG_ FornObjPosDetOnYAxisHSC6 : 29|6@0+ (1,0) [0|63] ""  BMS,TBOX
+
+BO_ 826 WLC_HSC6_FrP01: 8 WLC
+ SG_ WrlsChrgrActuInptCrntHSC6 : 23|8@0+ (0.2,0) [0|51] "A"  BMS
+ SG_ WrlsChrgrActuInptVolHSC6 : 31|8@0+ (2,0) [0|508] "V"  BMS
+ SG_ WrlsChrgrActuOtptCrntHSC6 : 33|10@0+ (0.05,0) [0|51.15] "A"  BMS
+ SG_ WrlsChrgrActuOtptVolHSC6 : 54|15@0+ (0.02,0) [0|655.32] "V"  BMS
+ SG_ WrlsChrgrGndSideStsHSC6 : 36|3@0+ (1,0) [0|7] ""  BMS
+ SG_ WrlsChrgrStsHSC6 : 11|4@0+ (1,0) [0|15] ""  BMS
+ SG_ WrlsChrgrVehSideStsHSC6 : 39|3@0+ (1,0) [0|7] ""  BMS
+ SG_ WrlsChrgrWallSideStsHSC6 : 14|3@0+ (1,0) [0|7] ""  BMS
+ SG_ WrlsChrgrWkupAHSC6 : 55|1@0+ (1,0) [0|1] ""  BMS
+
+
+
+CM_ SG_ 952 ChargerACCurrentHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 952 ChargerACVoltHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 952 ChargerHVCurrentHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 952 ChargerHVVoltHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 956 ChargerLVCurrentHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 956 ChargerLVVoltHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 956 ChrgrAltCrntLmtHSC6 "2017.11.22: Signed changed to Unsigned";
+CM_ SG_ 663 OffbdChrgrSysKeepAwkHSC6 "Offboard Charger System Keep Awake";
+CM_ SG_ 668 ChargeCurrentHSC6 "charging current setpoint";
+CM_ SG_ 668 ChargePowerHSC6 "charging power setpoint";
+CM_ SG_ 668 ChargerCapacityHSC6 "2017.11.14: Signed changed to Unsigned";
+CM_ SG_ 667 BMSChrgrPlugCnctnIO_h6HSC6 "Battery Management System Charger Plug Connection Indication On
+";
+CM_ SG_ 667 BMSChrgStsIO_h6HSC6 "
+";
+CM_ SG_ 940 BMSPackSOCDspV_h6HSC6 "Battery Management System Pack State Of Charge Display Validity";
+CM_ SG_ 1806 DTCInfomationChargerHSC6 "DTC Infomation of Charger
+
+The length of DTC information signal is 7 bytes.
+Byte 0 is MSB (most significant byte), and Byte 6 is LSB (least significant byte).
+For each byte, Bit 7 is msb (most significant bit), and Bit 0 is lsb (least significant bit).
+
+Byte 0:
+Bit (7-4): DTC Serious Level
+Bit (3-0): Reserved
+
+Byte 1:
+Bit (7-0): Reserved
+
+Byte 2:
+Bit (7-0): DTCHighByte
+
+Byte 3:
+Bit (7-0): DTCLowByte
+
+Byte 4:
+Bit (7-0): DTCFailureTypeByte
+
+Byte 5:
+Bit 7: warningIndicatorRequested
+Bit 6: testNotCompletedThisOperationCycle
+Bit 5: testFailedSinceLastClear
+Bit 4: testNotCompletedSinceLastClear
+Bit 3: confirmedDTC
+Bit 2: pendingDTC
+Bit 1: testFailedThisOperationCycle
+Bit 0: testFailed
+
+Byte 6:
+Bit (7-0): DTC Type
+
+For more detail, please refer to SMTC 2 800 004.";
+CM_ SG_ 2015 DiagnosticFuncAddrReq_h6 "Diagnostic functional address request";
+CM_ SG_ 1924 DiagnosticReqCharger "Diagnostic request to Charger";
+CM_ SG_ 1926 DiagnosticReqGSMC "Diagnostic request to GSMC";
+CM_ SG_ 1932 DiagnosticRespCharger "Diagnostic response from Charger";
+CM_ SG_ 142 EPTTMMinToqLmtVHSC6 "Electric Powertrain Traction Motor Minimum Torque Limit  Validity";
+CM_ SG_ 142 HCUChecksum04HSC6 "HCU FrP04 message Checksum";
+CM_ SG_ 142 HCUCounter04HSC6 "HCU FrP04 message Rolling Counter";
+CM_ SG_ 1031 SAMDernOverIdcHSC6 "Secondary Axle Motor Derating Due To Over Current";
+CM_ SG_ 1031 SAMDernOverTempHSC6 "Secondary Axle Motor Derating Due To Over Temperature";
+CM_ SG_ 1031 SAMDernOverUdcHSC6 "Secondary Axle Motor Derating Due To Over Voltage";
+CM_ SG_ 1031 SAMDernTqMaxHSC6 "Secondary Axle Motor Derating Due To Above Maximum Torque";
+CM_ SG_ 1031 SAMDernTqMinHSC6 "Secondary Axle Motor Derating Due To Below Minimum Torque";
+CM_ SG_ 1031 SAMDernUnderIdcHSC6 "Secondary Axle Motor Derating Due To Under Current";
+CM_ SG_ 1031 SAMDernUnderUdcHSC6 "Secondary Axle Motor Derating Due To Under Voltage";
+CM_ SG_ 797 SAMFlr1HSC6 "Secondary Axle Motor Failure 1";
+CM_ SG_ 797 SAMFlr2HSC6 "Secondary Axle Motor Failure 2";
+CM_ SG_ 797 SAMFlr3HSC6 "Secondary Axle Motor Failure 3";
+CM_ SG_ 797 SAMFlr4HSC6 "Secondary Axle Motor Failure 4";
+CM_ SG_ 797 SAMFlr5HSC6 "Secondary Axle Motor Failure 5";
+CM_ SG_ 797 SAMFlr6HSC6 "Secondary Axle Motor Failure 6";
+CM_ SG_ 797 SAMFlr7HSC6 "Secondary Axle Motor Failure 7";
+CM_ SG_ 797 SAMFlr8HSC6 "Secondary Axle Motor Failure 8";
+CM_ SG_ 926 SAMHVRdyHSC6 "Secondary Axle Motor High Voltage Ready";
+CM_ SG_ 926 SAMImmoResultHSC6 "Secondary Axle Motor Immo Result";
+CM_ SG_ 926 SAMInvtrClntTemHSC6 "Secondary Axle Motor Inverter Coolant Temperature";
+CM_ SG_ 926 SAMOfstAngHSC6 "Secondary Axle Motor Offset Angle";
+CM_ SG_ 926 SAMRtrTemHSC6 "Secondary Axle Motor Rotor Temperature";
+CM_ SG_ 1055 network_mode_h6 "NM signal: this signal contains the intended mode of the network. This signal controls the frame mode used by the slave nodes";
+CM_ SG_ 1055 signal_config_id_h6 "NM signal: this is the identification number of the signal configuration used. Read by the slave nodes to determine if they have the correct configuration or not";
+BA_DEF_  "BaudRate" FLOAT 1000 1000000;
+BA_DEF_ SG_  "GenSigLongName" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","OnChangeWithRepetition","Immediate";
+BA_DEF_ BO_  "GenMsgCycleTime" FLOAT 0 300000;
+BA_DEF_ SG_  "GenSigStartValue" INT -9.22337203685478E+018 1.84467440737096E+019;
+BA_DEF_DEF_  "BaudRate" 1000;
+BA_DEF_DEF_  "GenSigLongName" "";
+BA_DEF_DEF_  "GenMsgSendType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BaudRate" 500000;
+BA_ "GenMsgCycleTime" BO_ 952 100;
+BA_ "GenMsgSendType" BO_ 952 0;
+BA_ "GenMsgCycleTime" BO_ 954 100;
+BA_ "GenMsgSendType" BO_ 954 0;
+BA_ "GenMsgCycleTime" BO_ 956 100;
+BA_ "GenMsgSendType" BO_ 956 0;
+BA_ "GenMsgCycleTime" BO_ 958 200;
+BA_ "GenMsgSendType" BO_ 958 0;
+BA_ "GenMsgCycleTime" BO_ 498 20;
+BA_ "GenMsgSendType" BO_ 498 0;
+BA_ "GenMsgCycleTime" BO_ 659 50;
+BA_ "GenMsgSendType" BO_ 659 0;
+BA_ "GenMsgCycleTime" BO_ 661 20;
+BA_ "GenMsgSendType" BO_ 661 0;
+BA_ "GenMsgCycleTime" BO_ 663 50;
+BA_ "GenMsgSendType" BO_ 663 0;
+BA_ "GenMsgCycleTime" BO_ 369 20;
+BA_ "GenMsgSendType" BO_ 369 0;
+BA_ "GenMsgCycleTime" BO_ 668 100;
+BA_ "GenMsgSendType" BO_ 668 0;
+BA_ "GenMsgCycleTime" BO_ 665 50;
+BA_ "GenMsgSendType" BO_ 665 0;
+BA_ "GenMsgCycleTime" BO_ 667 50;
+BA_ "GenMsgSendType" BO_ 667 0;
+BA_ "GenMsgCycleTime" BO_ 1100 100;
+BA_ "GenMsgSendType" BO_ 1100 0;
+BA_ "GenMsgCycleTime" BO_ 370 20;
+BA_ "GenMsgSendType" BO_ 370 0;
+BA_ "GenMsgCycleTime" BO_ 371 20;
+BA_ "GenMsgSendType" BO_ 371 0;
+BA_ "GenMsgCycleTime" BO_ 674 100;
+BA_ "GenMsgSendType" BO_ 674 0;
+BA_ "GenMsgCycleTime" BO_ 939 100;
+BA_ "GenMsgSendType" BO_ 939 0;
+BA_ "GenMsgCycleTime" BO_ 940 100;
+BA_ "GenMsgSendType" BO_ 940 0;
+BA_ "GenMsgCycleTime" BO_ 913 100;
+BA_ "GenMsgSendType" BO_ 913 0;
+BA_ "GenMsgCycleTime" BO_ 915 100;
+BA_ "GenMsgSendType" BO_ 915 0;
+BA_ "GenMsgCycleTime" BO_ 936 100;
+BA_ "GenMsgSendType" BO_ 936 0;
+BA_ "GenMsgCycleTime" BO_ 820 100;
+BA_ "GenMsgSendType" BO_ 820 0;
+BA_ "GenMsgCycleTime" BO_ 672 100;
+BA_ "GenMsgSendType" BO_ 672 0;
+BA_ "GenMsgCycleTime" BO_ 962 10;
+BA_ "GenMsgSendType" BO_ 962 0;
+BA_ "GenMsgCycleTime" BO_ 831 100;
+BA_ "GenMsgSendType" BO_ 831 0;
+BA_ "GenMsgCycleTime" BO_ 960 100;
+BA_ "GenMsgSendType" BO_ 960 0;
+BA_ "GenMsgCycleTime" BO_ 1091 0;
+BA_ "GenMsgSendType" BO_ 1091 1;
+BA_ "GenMsgCycleTime" BO_ 497 20;
+BA_ "GenMsgSendType" BO_ 497 0;
+BA_ "GenMsgCycleTime" BO_ 1344 1000;
+BA_ "GenMsgSendType" BO_ 1344 0;
+BA_ "GenMsgCycleTime" BO_ 851 100;
+BA_ "GenMsgSendType" BO_ 851 0;
+BA_ "GenMsgCycleTime" BO_ 827 100;
+BA_ "GenMsgSendType" BO_ 827 0;
+BA_ "GenMsgCycleTime" BO_ 829 100;
+BA_ "GenMsgSendType" BO_ 829 0;
+BA_ "GenMsgCycleTime" BO_ 1806 0;
+BA_ "GenMsgSendType" BO_ 1806 1;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 5;
+BA_ "GenMsgCycleTime" BO_ 1924 0;
+BA_ "GenMsgSendType" BO_ 1924 5;
+BA_ "GenMsgCycleTime" BO_ 1926 0;
+BA_ "GenMsgSendType" BO_ 1926 5;
+BA_ "GenMsgCycleTime" BO_ 1932 0;
+BA_ "GenMsgSendType" BO_ 1932 5;
+BA_ "GenMsgCycleTime" BO_ 1712 0;
+BA_ "GenMsgSendType" BO_ 1712 1;
+BA_ "GenMsgCycleTime" BO_ 1713 0;
+BA_ "GenMsgSendType" BO_ 1713 1;
+BA_ "GenMsgCycleTime" BO_ 1714 0;
+BA_ "GenMsgSendType" BO_ 1714 1;
+BA_ "GenMsgCycleTime" BO_ 1715 0;
+BA_ "GenMsgSendType" BO_ 1715 1;
+BA_ "GenMsgCycleTime" BO_ 1716 0;
+BA_ "GenMsgSendType" BO_ 1716 1;
+BA_ "GenMsgCycleTime" BO_ 143 10;
+BA_ "GenMsgSendType" BO_ 143 0;
+BA_ "GenMsgCycleTime" BO_ 916 100;
+BA_ "GenMsgSendType" BO_ 916 0;
+BA_ "GenMsgCycleTime" BO_ 142 10;
+BA_ "GenMsgSendType" BO_ 142 0;
+BA_ "GenMsgCycleTime" BO_ 138 10;
+BA_ "GenMsgSendType" BO_ 138 0;
+BA_ "GenMsgCycleTime" BO_ 251 10;
+BA_ "GenMsgSendType" BO_ 251 0;
+BA_ "GenMsgCycleTime" BO_ 406 20;
+BA_ "GenMsgSendType" BO_ 406 0;
+BA_ "GenMsgCycleTime" BO_ 922 100;
+BA_ "GenMsgSendType" BO_ 922 0;
+BA_ "GenMsgCycleTime" BO_ 1664 10;
+BA_ "GenMsgSendType" BO_ 1664 0;
+BA_ "GenMsgCycleTime" BO_ 1680 100;
+BA_ "GenMsgSendType" BO_ 1680 0;
+BA_ "GenMsgCycleTime" BO_ 147 10;
+BA_ "GenMsgSendType" BO_ 147 0;
+BA_ "GenMsgCycleTime" BO_ 150 10;
+BA_ "GenMsgSendType" BO_ 150 0;
+BA_ "GenMsgCycleTime" BO_ 919 100;
+BA_ "GenMsgSendType" BO_ 919 0;
+BA_ "GenMsgCycleTime" BO_ 920 100;
+BA_ "GenMsgSendType" BO_ 920 0;
+BA_ "GenMsgCycleTime" BO_ 917 100;
+BA_ "GenMsgSendType" BO_ 917 0;
+BA_ "GenMsgCycleTime" BO_ 693 100;
+BA_ "GenMsgSendType" BO_ 693 0;
+BA_ "GenMsgCycleTime" BO_ 694 100;
+BA_ "GenMsgSendType" BO_ 694 0;
+BA_ "GenMsgCycleTime" BO_ 1031 300;
+BA_ "GenMsgSendType" BO_ 1031 0;
+BA_ "GenMsgCycleTime" BO_ 221 10;
+BA_ "GenMsgSendType" BO_ 221 0;
+BA_ "GenMsgCycleTime" BO_ 222 10;
+BA_ "GenMsgSendType" BO_ 222 0;
+BA_ "GenMsgCycleTime" BO_ 924 100;
+BA_ "GenMsgSendType" BO_ 924 0;
+BA_ "GenMsgCycleTime" BO_ 797 100;
+BA_ "GenMsgSendType" BO_ 797 0;
+BA_ "GenMsgCycleTime" BO_ 926 100;
+BA_ "GenMsgSendType" BO_ 926 0;
+BA_ "GenMsgCycleTime" BO_ 1053 200;
+BA_ "GenMsgSendType" BO_ 1053 0;
+BA_ "GenMsgCycleTime" BO_ 854 100;
+BA_ "GenMsgSendType" BO_ 854 0;
+BA_ "GenMsgCycleTime" BO_ 856 100;
+BA_ "GenMsgSendType" BO_ 856 0;
+BA_ "GenMsgCycleTime" BO_ 1055 0;
+BA_ "GenMsgSendType" BO_ 1055 5;
+BA_ "GenMsgCycleTime" BO_ 1682 100;
+BA_ "GenMsgSendType" BO_ 1682 0;
+BA_ "GenMsgCycleTime" BO_ 148 10;
+BA_ "GenMsgSendType" BO_ 148 0;
+BA_ "GenMsgCycleTime" BO_ 153 10;
+BA_ "GenMsgSendType" BO_ 153 0;
+BA_ "GenMsgCycleTime" BO_ 923 100;
+BA_ "GenMsgSendType" BO_ 923 0;
+BA_ "GenMsgCycleTime" BO_ 934 100;
+BA_ "GenMsgSendType" BO_ 934 0;
+BA_ "GenMsgCycleTime" BO_ 918 100;
+BA_ "GenMsgSendType" BO_ 918 0;
+BA_ "GenMsgCycleTime" BO_ 331 10;
+BA_ "GenMsgSendType" BO_ 331 0;
+BA_ "GenMsgCycleTime" BO_ 404 20;
+BA_ "GenMsgSendType" BO_ 404 0;
+BA_ "GenMsgCycleTime" BO_ 1555 500;
+BA_ "GenMsgSendType" BO_ 1555 0;
+BA_ "GenMsgCycleTime" BO_ 1556 500;
+BA_ "GenMsgSendType" BO_ 1556 0;
+BA_ "GenMsgCycleTime" BO_ 818 100;
+BA_ "GenMsgSendType" BO_ 818 0;
+BA_ "GenMsgCycleTime" BO_ 826 100;
+BA_ "GenMsgSendType" BO_ 826 0;
+BA_ "GenSigLongName" SG_ 952 ChargerACCurrentHSC6 "Charger Ac Current";
+BA_ "GenSigStartValue" SG_ 952 ChargerACCurrentHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerACVoltHSC6 "Charger Ac Voltage";
+BA_ "GenSigStartValue" SG_ 952 ChargerACVoltHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerFanStatusHSC6 "Charger Fan Status";
+BA_ "GenSigStartValue" SG_ 952 ChargerFanStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerHVCurrentHSC6 "Charger Hv Current";
+BA_ "GenSigStartValue" SG_ 952 ChargerHVCurrentHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerHVRelayStatusHSC6 "Charger Hv Relay Status";
+BA_ "GenSigStartValue" SG_ 952 ChargerHVRelayStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerHVVoltHSC6 "Charger Hv Voltage";
+BA_ "GenSigStartValue" SG_ 952 ChargerHVVoltHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerStatusHSC6 "Charger Status";
+BA_ "GenSigStartValue" SG_ 952 ChargerStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 952 ChargerWakeUpHSC6 "Charger Wakeup";
+BA_ "GenSigStartValue" SG_ 952 ChargerWakeUpHSC6 0;
+BA_ "GenSigStartValue" SG_ 952 OnbdChrgCPPwmDutyHSC6 0;
+BA_ "GenSigStartValue" SG_ 952 OnbdChrgCPPwmStatHSC6 0;
+BA_ "GenSigStartValue" SG_ 954 BMSCellMaxTemIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 954 BMSCellMaxVolIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 954 BMSCellMinTemIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 954 BMSCellMinVolIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 956 ChargerInsideTemp3HSC6 0;
+BA_ "GenSigLongName" SG_ 956 ChargerLVCurrentHSC6 "Charger Lv Current";
+BA_ "GenSigStartValue" SG_ 956 ChargerLVCurrentHSC6 0;
+BA_ "GenSigLongName" SG_ 956 ChargerLVVoltHSC6 "Charger Lv Voltage";
+BA_ "GenSigStartValue" SG_ 956 ChargerLVVoltHSC6 0;
+BA_ "GenSigLongName" SG_ 956 ChrgrAltCrntLmtHSC6 "Charger Alternative Current Limit";
+BA_ "GenSigStartValue" SG_ 956 ChrgrAltCrntLmtHSC6 0;
+BA_ "GenSigStartValue" SG_ 956 OBCShocketPosSnsrTempHSC6 0;
+BA_ "GenSigStartValue" SG_ 956 OnChrgCmdHSC6 0;
+BA_ "GenSigLongName" SG_ 956 OnChrgngFltHSC6 "Onboard Charging Fault";
+BA_ "GenSigStartValue" SG_ 956 OnChrgngFltHSC6 0;
+BA_ "GenSigLongName" SG_ 956 OnChrgrFltHSC6 "Onboard Charger Fault";
+BA_ "GenSigStartValue" SG_ 956 OnChrgrFltHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellTemHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellTemIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellTemVHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellVolHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellVolIndxHSC6 0;
+BA_ "GenSigStartValue" SG_ 958 BMSCellVolVHSC6 0;
+BA_ "GenSigLongName" SG_ 498 SysBPMHSC6 "System Backup Power Mode";
+BA_ "GenSigStartValue" SG_ 498 SysBPMHSC6 0;
+BA_ "GenSigLongName" SG_ 498 SysBPMEnbdHSC6 "System Backup Power Mode Enabled";
+BA_ "GenSigStartValue" SG_ 498 SysBPMEnbdHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSBalancingDoneHSC6 "Battery Management System Balancing Done";
+BA_ "GenSigStartValue" SG_ 659 BMSBalancingDoneHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSBalancingStatusHSC6 "Battery Management System Balancing Status";
+BA_ "GenSigStartValue" SG_ 659 BMSBalancingStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSCellBalancingCountHSC6 "Battery Management System Cell Balancing Count";
+BA_ "GenSigStartValue" SG_ 659 BMSCellBalancingCountHSC6 255;
+BA_ "GenSigLongName" SG_ 659 BMSCellOverVoltHSC6 "Battery Management System Cell Over Voltage";
+BA_ "GenSigStartValue" SG_ 659 BMSCellOverVoltHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSCellUnderVoltHSC6 "Battery Management System Cell Under Voltage";
+BA_ "GenSigStartValue" SG_ 659 BMSCellUnderVoltHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSContactorPowerCmdHSC6 "Battery Management System Contactor Power Relay Command State";
+BA_ "GenSigStartValue" SG_ 659 BMSContactorPowerCmdHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSContactorPowerMonHSC6 "Battery Management System Contactor Power Relay Monitor";
+BA_ "GenSigStartValue" SG_ 659 BMSContactorPowerMonHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSCrashCircuitStatusHSC6 "Battery Management System Crash Circuit Status";
+BA_ "GenSigStartValue" SG_ 659 BMSCrashCircuitStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSEEpromWipHSC6 "Battery Management System Eeprom Write In Progress";
+BA_ "GenSigStartValue" SG_ 659 BMSEEpromWipHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSLVBatInputHSC6 "Battery Management System Low Voltage Battery Input";
+BA_ "GenSigStartValue" SG_ 659 BMSLVBatInputHSC6 255;
+BA_ "GenSigLongName" SG_ 659 BMSModuleEnableHSC6 "Battery Management System Module Enable";
+BA_ "GenSigStartValue" SG_ 659 BMSModuleEnableHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSNegRelayStatusHSC6 "Battery Management System Negative Relay Status";
+BA_ "GenSigStartValue" SG_ 659 BMSNegRelayStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSOffbdChargerWakeupHSC6 "Battery Management System Offboard Charger Wakeup";
+BA_ "GenSigStartValue" SG_ 659 BMSOffbdChargerWakeupHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSOnbdChargerWakeupHSC6 "Battery Management System Onboard Charger Wakeup";
+BA_ "GenSigStartValue" SG_ 659 BMSOnbdChargerWakeupHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSPosRelayStatusHSC6 "Battery Management System Positive Relay Status";
+BA_ "GenSigStartValue" SG_ 659 BMSPosRelayStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSPreRelayStatusHSC6 "Battery Management System Precharge Relay Status";
+BA_ "GenSigStartValue" SG_ 659 BMSPreRelayStatusHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSPTIsolationLevelHSC6 "Battery Management System Powertrain Isolation Level";
+BA_ "GenSigStartValue" SG_ 659 BMSPTIsolationLevelHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSReadyHSC6 "Battery Management System Ready";
+BA_ "GenSigStartValue" SG_ 659 BMSReadyHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSRelayStepHSC6 "Battery Management System Relay Step";
+BA_ "GenSigStartValue" SG_ 659 BMSRelayStepHSC6 0;
+BA_ "GenSigLongName" SG_ 659 BMSVehicleWakeupHSC6 "Battery Management System Vehicle Wakeup";
+BA_ "GenSigStartValue" SG_ 659 BMSVehicleWakeupHSC6 0;
+BA_ "GenSigLongName" SG_ 661 BMSChecksum01HSC6 "Battery Management System Frame01 Checksum";
+BA_ "GenSigStartValue" SG_ 661 BMSChecksum01HSC6 0;
+BA_ "GenSigLongName" SG_ 661 BMSCounter01HSC6 "Battery Management System Frame01 Rolling Counter";
+BA_ "GenSigStartValue" SG_ 661 BMSCounter01HSC6 0;
+BA_ "GenSigLongName" SG_ 661 BMSPackCrntV_h6HSC6 "Battery Management System Pack Current Validity";
+BA_ "GenSigStartValue" SG_ 661 BMSPackCrntV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 661 BMSPackCrnt_h6HSC6 "Battery Management System Pack Current";
+BA_ "GenSigStartValue" SG_ 661 BMSPackCrnt_h6HSC6 65535;
+BA_ "GenSigLongName" SG_ 661 BMSPackSOCHSC6 "Battery Management System Pack State Of Charge";
+BA_ "GenSigStartValue" SG_ 661 BMSPackSOCHSC6 1023;
+BA_ "GenSigLongName" SG_ 661 BMSPackSOCVHSC6 "Battery Management System Pack State Of Charge Validity";
+BA_ "GenSigStartValue" SG_ 661 BMSPackSOCVHSC6 1;
+BA_ "GenSigLongName" SG_ 661 BMSPackVolV_h6HSC6 "Battery Management System Pack Voltage Validity";
+BA_ "GenSigStartValue" SG_ 661 BMSPackVolV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 661 BMSPackVol_h6HSC6 "Battery Management System Pack Voltage";
+BA_ "GenSigStartValue" SG_ 661 BMSPackVol_h6HSC6 4095;
+BA_ "GenSigLongName" SG_ 663 BMSBscSta_h6HSC6 "Battery Management System Basic State";
+BA_ "GenSigStartValue" SG_ 663 BMSBscSta_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSCdstCtrHSC6 "Battery Management System Coldstart Counter";
+BA_ "GenSigStartValue" SG_ 663 BMSCdstCtrHSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSChecksum02HSC6 "Battery Management System Frame02 Checksum";
+BA_ "GenSigStartValue" SG_ 663 BMSChecksum02HSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSCounter02HSC6 "Battery Management System Counter Frp02";
+BA_ "GenSigStartValue" SG_ 663 BMSCounter02HSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSFltLvlHSC6 "Battery Management System Fault Level";
+BA_ "GenSigStartValue" SG_ 663 BMSFltLvlHSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSHVILClsdHSC6 "Battery Management System High Voltage Interlock Loop Closed";
+BA_ "GenSigStartValue" SG_ 663 BMSHVILClsdHSC6 1;
+BA_ "GenSigLongName" SG_ 663 BMSMainRelaySts_h6HSC6 "Battery Management System Main Relay Status";
+BA_ "GenSigStartValue" SG_ 663 BMSMainRelaySts_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSOfbdChrgRelayStsHSC6 "Battery Management System Offboard Charge Relay Status";
+BA_ "GenSigStartValue" SG_ 663 BMSOfbdChrgRelayStsHSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSOnbdChrgRelayStsHSC6 "Battery Management System Onboard Charge Relay Status";
+BA_ "GenSigStartValue" SG_ 663 BMSOnbdChrgRelayStsHSC6 0;
+BA_ "GenSigLongName" SG_ 663 BMSPtIsltnRstcHSC6 "Battery Management System Powertrain Isolation Resistance";
+BA_ "GenSigStartValue" SG_ 663 BMSPtIsltnRstcHSC6 16383;
+BA_ "GenSigLongName" SG_ 663 BMSPtIsltnRstcVHSC6 "Battery Management System Powertrain Isolation Resistance Validity";
+BA_ "GenSigStartValue" SG_ 663 BMSPtIsltnRstcVHSC6 1;
+BA_ "GenSigLongName" SG_ 663 BMSVehEmgcPwrOffHSC6 "Battery Management System Vehicle Emergency Power Off";
+BA_ "GenSigStartValue" SG_ 663 BMSVehEmgcPwrOffHSC6 14;
+BA_ "GenSigStartValue" SG_ 663 OffbdChrgrSysKeepAwkHSC6 0;
+BA_ "GenSigLongName" SG_ 663 OnbdChrgrSktEleccLckEHSC6 "Onboard Charger Socket Electronic Lock Enabled";
+BA_ "GenSigStartValue" SG_ 663 OnbdChrgrSktEleccLckEHSC6 0;
+BA_ "GenSigLongName" SG_ 663 OnbdChrgrSysKeepAwkHSC6 "Onboard Charger System Keep Awake";
+BA_ "GenSigStartValue" SG_ 663 OnbdChrgrSysKeepAwkHSC6 0;
+BA_ "GenSigLongName" SG_ 369 BMSChecksum03HSC6 "Battery Management System Checksum Frp03";
+BA_ "GenSigStartValue" SG_ 369 BMSChecksum03HSC6 0;
+BA_ "GenSigLongName" SG_ 369 BMSChrgCrntLmtHSC6 "Battery Management System Charge Current Limit";
+BA_ "GenSigStartValue" SG_ 369 BMSChrgCrntLmtHSC6 0;
+BA_ "GenSigLongName" SG_ 369 BMSChrgCrntLmtVHSC6 "Battery Management System Charge Current Limit Validity";
+BA_ "GenSigStartValue" SG_ 369 BMSChrgCrntLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 369 BMSCounter03HSC6 "Battery Management System Counter Frp03";
+BA_ "GenSigStartValue" SG_ 369 BMSCounter03HSC6 0;
+BA_ "GenSigLongName" SG_ 369 BMSDschrgCrntLmtHSC6 "Battery Management System Discharge Current Limit";
+BA_ "GenSigStartValue" SG_ 369 BMSDschrgCrntLmtHSC6 1023;
+BA_ "GenSigLongName" SG_ 369 BMSDschrgCrntLmtVHSC6 "Battery Management System Discharge Current Limit Validity";
+BA_ "GenSigStartValue" SG_ 369 BMSDschrgCrntLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 369 BMSMaxVolLmtHSC6 "Battery Management System Maximum Voltage Limit";
+BA_ "GenSigStartValue" SG_ 369 BMSMaxVolLmtHSC6 1023;
+BA_ "GenSigLongName" SG_ 369 BMSMaxVolLmtVHSC6 "Battery Management System Maximum Voltage Limit Validity";
+BA_ "GenSigStartValue" SG_ 369 BMSMaxVolLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 369 BMSMinVolLmtHSC6 "Battery Management System Minimum Voltage Limit";
+BA_ "GenSigStartValue" SG_ 369 BMSMinVolLmtHSC6 1023;
+BA_ "GenSigLongName" SG_ 369 BMSMinVolLmtVHSC6 "Battery Management System Minimum Voltage Limit Validity";
+BA_ "GenSigStartValue" SG_ 369 BMSMinVolLmtVHSC6 1;
+BA_ "GenSigStartValue" SG_ 668 ChargeCurrentHSC6 0;
+BA_ "GenSigStartValue" SG_ 668 ChargePowerHSC6 0;
+BA_ "GenSigLongName" SG_ 668 ChargerCapacityHSC6 "Charger Capacity";
+BA_ "GenSigStartValue" SG_ 668 ChargerCapacityHSC6 0;
+BA_ "GenSigStartValue" SG_ 668 ChargerInletTempHSC6 0;
+BA_ "GenSigLongName" SG_ 668 ChargerModeHSC6 "Charger Mode";
+BA_ "GenSigStartValue" SG_ 668 ChargerModeHSC6 0;
+BA_ "GenSigStartValue" SG_ 668 ChargerVoltageHSC6 0;
+BA_ "GenSigLongName" SG_ 665 BMSFlameGasStatusHSC6 "Battery Management System Flammable Gas Detector Duty Cycle";
+BA_ "GenSigStartValue" SG_ 665 BMSFlameGasStatusHSC6 255;
+BA_ "GenSigLongName" SG_ 665 BMSFltCtHSC6 "Battery Management System Fault Count";
+BA_ "GenSigStartValue" SG_ 665 BMSFltCtHSC6 255;
+BA_ "GenSigLongName" SG_ 665 BMSNegativeBusVoltHSC6 "Battery Management System Negative Bus Voltage";
+BA_ "GenSigStartValue" SG_ 665 BMSNegativeBusVoltHSC6 4095;
+BA_ "GenSigLongName" SG_ 665 BMSPackCurrent2HSC6 "Battery Management System Pack Current 2";
+BA_ "GenSigStartValue" SG_ 665 BMSPackCurrent2HSC6 65535;
+BA_ "GenSigLongName" SG_ 665 BMSPackSOCActualHSC6 "Battery Management System Pack Actual State Of Charge";
+BA_ "GenSigStartValue" SG_ 665 BMSPackSOCActualHSC6 254;
+BA_ "GenSigLongName" SG_ 665 BMSPositiveBusVoltHSC6 "Battery Management System Positive Bus Voltage";
+BA_ "GenSigStartValue" SG_ 665 BMSPositiveBusVoltHSC6 4095;
+BA_ "GenSigStartValue" SG_ 667 BMSBusbarTempMaxHSC6 0;
+BA_ "GenSigLongName" SG_ 667 BMSChgIndDriverStatHSC6 "Battery Management System Charging Indication Driver Status";
+BA_ "GenSigStartValue" SG_ 667 BMSChgIndDriverStatHSC6 0;
+BA_ "GenSigStartValue" SG_ 667 BMSChrgrPlugCnctnIO_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 667 BMSChrgStsIO_h6HSC6 "Battery Management System Charge Status Indication On";
+BA_ "GenSigStartValue" SG_ 667 BMSChrgStsIO_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 667 BMSConIndDriverStatHSC6 "Battery Management System Connection Indication Driver Status";
+BA_ "GenSigStartValue" SG_ 667 BMSConIndDriverStatHSC6 1;
+BA_ "GenSigLongName" SG_ 667 BMSLiquidSensorStHSC6 "Battery Management System Liquid Level Seneor Status";
+BA_ "GenSigStartValue" SG_ 667 BMSLiquidSensorStHSC6 0;
+BA_ "GenSigLongName" SG_ 667 BMSPackSOHHSC6 "Battery Management System Pack State Of Health";
+BA_ "GenSigStartValue" SG_ 667 BMSPackSOHHSC6 1022;
+BA_ "GenSigLongName" SG_ 667 BMSStaOfHealthCapctHSC6 "Battery Management System State Of Health Capacity";
+BA_ "GenSigStartValue" SG_ 667 BMSStaOfHealthCapctHSC6 255;
+BA_ "GenSigLongName" SG_ 667 BMSStaOfHealthResiHSC6 "Battery Management System State Of Health Resistance";
+BA_ "GenSigStartValue" SG_ 667 BMSStaOfHealthResiHSC6 255;
+BA_ "GenSigLongName" SG_ 1100 keep_network_BMSHSC6 "Keep Network Battery Management System";
+BA_ "GenSigStartValue" SG_ 1100 keep_network_BMSHSC6 0;
+BA_ "GenSigLongName" SG_ 370 BMSChrgPeakPwrHSC6 "Battery Management System Charge Peak Power";
+BA_ "GenSigStartValue" SG_ 370 BMSChrgPeakPwrHSC6 2047;
+BA_ "GenSigLongName" SG_ 370 BMSChrgPeakPwrVHSC6 "Battery Management System Charge Peak Power Validity";
+BA_ "GenSigStartValue" SG_ 370 BMSChrgPeakPwrVHSC6 1;
+BA_ "GenSigLongName" SG_ 370 BMSChrgPwrLmtHSC6 "Battery Management System Charge Power Limit";
+BA_ "GenSigStartValue" SG_ 370 BMSChrgPwrLmtHSC6 2047;
+BA_ "GenSigLongName" SG_ 370 BMSChrgPwrLmtVHSC6 "Battery Management System Charge Power Limit Validity";
+BA_ "GenSigStartValue" SG_ 370 BMSChrgPwrLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 370 BMSDschrgPeakPwrHSC6 "Battery Management System Discharge Peak Power";
+BA_ "GenSigStartValue" SG_ 370 BMSDschrgPeakPwrHSC6 2047;
+BA_ "GenSigLongName" SG_ 370 BMSDschrgPeakPwrVHSC6 "Battery Management System Discharge Peak Power Validity";
+BA_ "GenSigStartValue" SG_ 370 BMSDschrgPeakPwrVHSC6 1;
+BA_ "GenSigLongName" SG_ 370 BMSDschrgPwrLmtHSC6 "Battery Management System Discharge Power Limit";
+BA_ "GenSigStartValue" SG_ 370 BMSDschrgPwrLmtHSC6 2047;
+BA_ "GenSigLongName" SG_ 370 BMSDschrgPwrLmtVHSC6 "Battery Management System Discharge Power Limit Validity";
+BA_ "GenSigStartValue" SG_ 370 BMSDschrgPwrLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 371 BMSCellMaxVolHSC6 "Battery Management System Cell Maximum Voltage";
+BA_ "GenSigStartValue" SG_ 371 BMSCellMaxVolHSC6 8191;
+BA_ "GenSigLongName" SG_ 371 BMSCellMaxVolVHSC6 "Battery Management System Cell Maximum Voltage Validity";
+BA_ "GenSigStartValue" SG_ 371 BMSCellMaxVolVHSC6 1;
+BA_ "GenSigLongName" SG_ 371 BMSCellMinVolHSC6 "Battery Management System Cell Minimum Voltage";
+BA_ "GenSigStartValue" SG_ 371 BMSCellMinVolHSC6 8191;
+BA_ "GenSigLongName" SG_ 371 BMSCellMinVolVHSC6 "Battery Management System Cell Minimum Voltage Validity";
+BA_ "GenSigStartValue" SG_ 371 BMSCellMinVolVHSC6 1;
+BA_ "GenSigLongName" SG_ 371 BMSChrgBufHSC6 "Battery Management System Charge Buffer";
+BA_ "GenSigStartValue" SG_ 371 BMSChrgBufHSC6 255;
+BA_ "GenSigLongName" SG_ 371 BMSChrgBufVHSC6 "Battery Management System Charge Buffer Validity";
+BA_ "GenSigStartValue" SG_ 371 BMSChrgBufVHSC6 1;
+BA_ "GenSigLongName" SG_ 371 BMSDschrgBufHSC6 "Battery Management System Discharge Buffer";
+BA_ "GenSigStartValue" SG_ 371 BMSDschrgBufHSC6 255;
+BA_ "GenSigLongName" SG_ 371 BMSDschrgBufVHSC6 "Battery Management System Discharge Buffer Validity";
+BA_ "GenSigStartValue" SG_ 371 BMSDschrgBufVHSC6 1;
+BA_ "GenSigLongName" SG_ 674 BMSCellMaxTemV_h6HSC6 "Battery Management System Cell Maximum Temperature Validity";
+BA_ "GenSigStartValue" SG_ 674 BMSCellMaxTemV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 674 BMSCellMaxTem_h6HSC6 "Battery Management System Cell Maximum Temperature";
+BA_ "GenSigStartValue" SG_ 674 BMSCellMaxTem_h6HSC6 255;
+BA_ "GenSigLongName" SG_ 674 BMSCellMinTemV_h6HSC6 "Battery Management System Cell Minimum Temperature Validity";
+BA_ "GenSigStartValue" SG_ 674 BMSCellMinTemV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 674 BMSCellMinTem_h6HSC6 "Battery Management System Cell Minimum Temperature";
+BA_ "GenSigStartValue" SG_ 674 BMSCellMinTem_h6HSC6 255;
+BA_ "GenSigLongName" SG_ 674 BMSChrgReqHSC6 "Battery Management System Charge Request";
+BA_ "GenSigStartValue" SG_ 674 BMSChrgReqHSC6 0;
+BA_ "GenSigLongName" SG_ 674 BMSOdoFctHSC6 "Battery Management System Odometer Factor";
+BA_ "GenSigStartValue" SG_ 674 BMSOdoFctHSC6 255;
+BA_ "GenSigLongName" SG_ 674 BMSOdoFctVHSC6 "Battery Management System Odometer Factor Validity";
+BA_ "GenSigStartValue" SG_ 674 BMSOdoFctVHSC6 1;
+BA_ "GenSigLongName" SG_ 674 BMSOfbdChrgrPlugOn_h6HSC6 "Battery Management System Offboard Charger Plug On";
+BA_ "GenSigStartValue" SG_ 674 BMSOfbdChrgrPlugOn_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 674 BMSOnbdChrgrPlugOn_h6HSC6 "Battery Management System Onboard Charger Plug On";
+BA_ "GenSigStartValue" SG_ 674 BMSOnbdChrgrPlugOn_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 674 VehElecRng_h6HSC6 "Vehicle Electric Range";
+BA_ "GenSigStartValue" SG_ 674 VehElecRng_h6HSC6 2046;
+BA_ "GenSigLongName" SG_ 939 BMSAvlblEnrgV_h6HSC6 "Battery Management System Available Energy Validity";
+BA_ "GenSigStartValue" SG_ 939 BMSAvlblEnrgV_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 939 BMSAvlblEnrg_h6HSC6 "Battery Management System Available Energy";
+BA_ "GenSigStartValue" SG_ 939 BMSAvlblEnrg_h6HSC6 255;
+BA_ "GenSigLongName" SG_ 939 HVBatElecEnrgAvgRate_h6HSC6 "High Voltage Battery Electric Energy Average Rate";
+BA_ "GenSigStartValue" SG_ 939 HVBatElecEnrgAvgRate_h6HSC6 1023;
+BA_ "GenSigStartValue" SG_ 940 BMSPackSOCDspV_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 940 BMSPackSOCDsp_h6HSC6 "Battery Management System Pack State Of Charge Display";
+BA_ "GenSigStartValue" SG_ 940 BMSPackSOCDsp_h6HSC6 1023;
+BA_ "GenSigStartValue" SG_ 913 BMSChrgngRmnngStTime_h6HSC6 2046;
+BA_ "GenSigLongName" SG_ 913 BMSChrgSts_h6HSC6 "Battery Management System Charge Status";
+BA_ "GenSigStartValue" SG_ 913 BMSChrgSts_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 913 BMSReserDurtnTimeDspCmd_h6HSC6 "Battery Management System Reservation Duration Time Display Command";
+BA_ "GenSigStartValue" SG_ 913 BMSReserDurtnTimeDspCmd_h6HSC6 62;
+BA_ "GenSigLongName" SG_ 913 BMSReserPushItemHSC6 "Battery Management System Reservation Push Items";
+BA_ "GenSigStartValue" SG_ 913 BMSReserPushItemHSC6 0;
+BA_ "GenSigLongName" SG_ 913 BMSReserStDurtnTimeDspCmdHSC6 "Battery Management System Reservation Start Duration Time Display Command";
+BA_ "GenSigStartValue" SG_ 913 BMSReserStDurtnTimeDspCmdHSC6 30;
+BA_ "GenSigLongName" SG_ 913 BMSReserStHourDspCmd_h6HSC6 "Battery Management System Reservation Start Hour Display Command";
+BA_ "GenSigStartValue" SG_ 913 BMSReserStHourDspCmd_h6HSC6 30;
+BA_ "GenSigLongName" SG_ 913 BMSReserStMinuteDspCmdHSC6 "Battery Management System Reservation Start Minute Display Command";
+BA_ "GenSigStartValue" SG_ 913 BMSReserStMinuteDspCmdHSC6 62;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgCtrlDspCmdHSC6 "Battery Management System Reservation Charge Control Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgCtrlDspCmdHSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgEnrgDspCmd_h6HSC6 "Battery Management System Reservation Charge Energy Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgEnrgDspCmd_h6HSC6 63;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgFltReasonHSC6 "Battery Management System Reservation Charge Fault Reason";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgFltReasonHSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgFrqcDspCmdHSC6 "Battery Management System Reservation Charge Frequency Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgFrqcDspCmdHSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgMdDspCmd_h6HSC6 "Battery Management System Reservation Charge Mode Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgMdDspCmd_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgRespVHSC6 "Battery Management System Reservation Charge Response Validity";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgRespVHSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserChrgRngDspCmd_h6HSC6 "Battery Management System Reservation Charge Range Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserChrgRngDspCmd_h6HSC6 1022;
+BA_ "GenSigLongName" SG_ 915 BMSReserFltReasonHSC6 "Battery Management System Reservation Fault Reason";
+BA_ "GenSigStartValue" SG_ 915 BMSReserFltReasonHSC6 0;
+BA_ "GenSigLongName" SG_ 915 BMSReserMaxCrntDspCmd_h6HSC6 "Battery Management System Reservation Maximun Current Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserMaxCrntDspCmd_h6HSC6 63;
+BA_ "GenSigLongName" SG_ 915 BMSReserStaDspCmdHSC6 "Battery Management System Reservation State Display Command";
+BA_ "GenSigStartValue" SG_ 915 BMSReserStaDspCmdHSC6 0;
+BA_ "GenSigStartValue" SG_ 915 BMSReserTrgtSOCDspCmd_h6HSC6 1022;
+BA_ "GenSigStartValue" SG_ 936 BMSWrlsChrgnFltReason_h6HSC6 0;
+BA_ "GenSigStartValue" SG_ 936 BMSWrlsChrgngResp_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 936 ChrgngRmnngTimeV_h6HSC6 "Charging Remaining Time Validity";
+BA_ "GenSigStartValue" SG_ 936 ChrgngRmnngTimeV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 936 ChrgngRmnngTime_h6HSC6 "Charging Remaining Time";
+BA_ "GenSigStartValue" SG_ 936 ChrgngRmnngTime_h6HSC6 1023;
+BA_ "GenSigStartValue" SG_ 820 BMSWkupWrlsChrgrHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngCmd_oldHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngFltHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngInptCrntLmtHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngMdHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngOtptCrntHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngOtptPwrHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngOtptVolHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgngSftyHSC6 0;
+BA_ "GenSigStartValue" SG_ 820 BMSWrlsChrgrFltHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSChksmHSC6 "Battery Management System Checksum";
+BA_ "GenSigStartValue" SG_ 672 BMSChksmHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSEnbPTCHSC6 "Battery Management System Enable Positive Temperature Coefficient";
+BA_ "GenSigStartValue" SG_ 672 BMSEnbPTCHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSInptClntTemHSC6 "Battery Management System Input Coolant Temperature";
+BA_ "GenSigStartValue" SG_ 672 BMSInptClntTemHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSReqMdHSC6 "Battery Management System Request Mode";
+BA_ "GenSigStartValue" SG_ 672 BMSReqMdHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSReqPWMHSC6 "Battery Management System Request Pulse Width Modulation";
+BA_ "GenSigStartValue" SG_ 672 BMSReqPWMHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSReqPwrHSC6 "Battery Management System Request Power";
+BA_ "GenSigStartValue" SG_ 672 BMSReqPwrHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSReqRlngCtrHSC6 "Battery Management System Request Rolling Counter";
+BA_ "GenSigStartValue" SG_ 672 BMSReqRlngCtrHSC6 0;
+BA_ "GenSigLongName" SG_ 672 BMSReqTapPosHSC6 "Battery Management System Request Tap Position";
+BA_ "GenSigStartValue" SG_ 672 BMSReqTapPosHSC6 0;
+BA_ "GenSigLongName" SG_ 962 CalDataHSC6 "Calibration Data";
+BA_ "GenSigStartValue" SG_ 962 CalDataHSC6 0;
+BA_ "GenSigLongName" SG_ 962 ErIndHSC6 "Error Indication";
+BA_ "GenSigStartValue" SG_ 962 ErIndHSC6 0;
+BA_ "GenSigLongName" SG_ 962 ErInfoHSC6 "Error Information";
+BA_ "GenSigStartValue" SG_ 962 ErInfoHSC6 0;
+BA_ "GenSigLongName" SG_ 962 PriyCrntValHSC6 "Primary Current Value";
+BA_ "GenSigStartValue" SG_ 962 PriyCrntValHSC6 2147483648;
+BA_ "GenSigLongName" SG_ 831 BMSChrgngMdHSC6 "Battery Management System Charging Mode";
+BA_ "GenSigStartValue" SG_ 831 BMSChrgngMdHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSChrgrAltCrntLmtHSC6 "Battery Management System Charger Alternative Current Limit";
+BA_ "GenSigStartValue" SG_ 831 BMSChrgrAltCrntLmtHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSChrgrOtptCrntHSC6 "Battery Management System Charger Output Current";
+BA_ "GenSigStartValue" SG_ 831 BMSChrgrOtptCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSChrgrOtptPwrHSC6 "Battery Management System Charger Output Power";
+BA_ "GenSigStartValue" SG_ 831 BMSChrgrOtptPwrHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSChrgrOtptVolHSC6 "Battery Management System Charger Output Voltage";
+BA_ "GenSigStartValue" SG_ 831 BMSChrgrOtptVolHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnbdChrgngCmdHSC6 "Battery Management System Onboard Charging Command";
+BA_ "GenSigStartValue" SG_ 831 BMSOnbdChrgngCmdHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnBdChrgngFltHSC6 "Battery Management System On Board Charging Fault";
+BA_ "GenSigStartValue" SG_ 831 BMSOnBdChrgngFltHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnBdChrgngNotSftyHSC6 "Battery Management System On Board Charging Not Safety";
+BA_ "GenSigStartValue" SG_ 831 BMSOnBdChrgngNotSftyHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnBdChrgrClntTemHSC6 "Battery Management System On Board Charger Coolant Temperature";
+BA_ "GenSigStartValue" SG_ 831 BMSOnBdChrgrClntTemHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnBdChrgrFltHSC6 "Battery Management System On Board Charger Fault";
+BA_ "GenSigStartValue" SG_ 831 BMSOnBdChrgrFltHSC6 0;
+BA_ "GenSigLongName" SG_ 831 BMSOnBdChrgrSktElecClkStsHSC6 "Battery Management System On Board Charger Socket Electric Clock Status";
+BA_ "GenSigStartValue" SG_ 831 BMSOnBdChrgrSktElecClkStsHSC6 0;
+BA_ "GenSigLongName" SG_ 960 BMSReqChrgrOtptCrntHSC6 "Battery Management System Request Charger Output Current";
+BA_ "GenSigStartValue" SG_ 960 BMSReqChrgrOtptCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 960 BMSReqChrgrOtptPwrHSC6 "Battery Management System Request Charger Output Power";
+BA_ "GenSigStartValue" SG_ 960 BMSReqChrgrOtptPwrHSC6 0;
+BA_ "GenSigLongName" SG_ 960 BMSReqChrgrOtptVolHSC6 "Battery Management System Request Charger Output Voltage";
+BA_ "GenSigStartValue" SG_ 960 BMSReqChrgrOtptVolHSC6 0;
+BA_ "GenSigLongName" SG_ 1091 wake_network_BMSHSC6 "Wake Network Battery Management System";
+BA_ "GenSigStartValue" SG_ 1091 wake_network_BMSHSC6 0;
+BA_ "GenSigLongName" SG_ 497 BPMMstrAvlbly_h1HSC6 "Backup Power Mode Master Availability";
+BA_ "GenSigStartValue" SG_ 497 BPMMstrAvlbly_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 PwrMdMstrAccryA_h1HSC6 "Power Mode Master Accessory Active";
+BA_ "GenSigStartValue" SG_ 497 PwrMdMstrAccryA_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 PwrMdMstrRunCrkA_h1HSC6 "Power Mode Master Run Crank Active";
+BA_ "GenSigStartValue" SG_ 497 PwrMdMstrRunCrkA_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysOpnlMd_h1HSC6 "System Operational Mode";
+BA_ "GenSigStartValue" SG_ 497 SysOpnlMd_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysPwrMdV_h1HSC6 "System Power Mode Validity";
+BA_ "GenSigStartValue" SG_ 497 SysPwrMdV_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysPwrMd_h1HSC6 "System Power Mode";
+BA_ "GenSigStartValue" SG_ 497 SysPwrMd_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysVolMdV_h1HSC6 "System Voltage Mode Validity";
+BA_ "GenSigStartValue" SG_ 497 SysVolMdV_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysVolMd_h1HSC6 "System Voltage Mode";
+BA_ "GenSigStartValue" SG_ 497 SysVolMd_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysVolV_h1HSC6 "System Voltage Validity";
+BA_ "GenSigStartValue" SG_ 497 SysVolV_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 497 SysVol_h1HSC6 "System Voltage";
+BA_ "GenSigStartValue" SG_ 497 SysVol_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 1344 VehOdoV_h1HSC6 "Vehicle Odometer Validity";
+BA_ "GenSigStartValue" SG_ 1344 VehOdoV_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 1344 VehOdo_h1HSC6 "Vehicle Odometer";
+BA_ "GenSigStartValue" SG_ 1344 VehOdo_h1HSC6 0;
+BA_ "GenSigLongName" SG_ 851 VehSpdAvgDrvnHSC6 "Vehicle Speed Average Driven";
+BA_ "GenSigStartValue" SG_ 851 VehSpdAvgDrvnHSC6 0;
+BA_ "GenSigLongName" SG_ 851 VehSpdAvgDrvnVHSC6 "Vehicle Speed Average Driven Validity";
+BA_ "GenSigStartValue" SG_ 851 VehSpdAvgDrvnVHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrCtrlPilotPWMDutyHSC6 "On Board Charger Control Pilot Pulse Width Modulation Duty";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrCtrlPilotPWMDutyHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrFltCtHSC6 "On Board Charger Fault Count";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrFltCtHSC6 255;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrFltStsHSC6 "On Board Charger Fault Status";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrFltStsHSC6 254;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrInsdTem3HSC6 "On Board Charger Inside Temperature 3";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrInsdTem3HSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrLastWkupHSC6 "On Board Charger Last Wakeup";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrLastWkupHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrOtptVolHSC6 "On Board Charger Output Voltage";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrOtptVolHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrSktNgtvSnsrTemHSC6 "On Board Charger Socket Negative Sensor Temperature";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrSktNgtvSnsrTemHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrSktPstvSnsrTemHSC6 "On Board Charger Socket Positive Sensor Temperature";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrSktPstvSnsrTemHSC6 0;
+BA_ "GenSigLongName" SG_ 827 OnBdChrgrWkupHSC6 "On Board Charger Wakeup";
+BA_ "GenSigStartValue" SG_ 827 OnBdChrgrWkupHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgngSpRsnHSC6 "On Board Charging Stop Reason";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgngSpRsnHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrAltrCrntInptCrntHSC6 "On Board Charger Alternator Current Input Current";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrAltrCrntInptCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrAltrCrntInptVolHSC6 "On Board Charger Alternator Current Input Voltage";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrAltrCrntInptVolHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrClntPumpDutyHSC6 "On Board Charger Coolant Pump Duty";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrClntPumpDutyHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrCtrlPilotPWMStsHSC6 "On Board Charger Control Pilot Pulse Width Modulation Status";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrCtrlPilotPWMStsHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrHVILStsHSC6 "On Board Charger High Voltage Interlock Loop Status";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrHVILStsHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrOtptCrntHSC6 "On Board Charger Output Current";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrOtptCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 829 OnBdChrgrStsHSC6 "On Board Charger Status";
+BA_ "GenSigStartValue" SG_ 829 OnBdChrgrStsHSC6 0;
+BA_ "GenSigStartValue" SG_ 1806 DTCInfomationChargerHSC6 0;
+BA_ "GenSigStartValue" SG_ 2015 DiagnosticFuncAddrReq_h6 0;
+BA_ "GenSigStartValue" SG_ 1924 DiagnosticReqCharger 0;
+BA_ "GenSigStartValue" SG_ 1926 DiagnosticReqGSMC 0;
+BA_ "GenSigStartValue" SG_ 1932 DiagnosticRespCharger 0;
+BA_ "GenSigStartValue" SG_ 1712 HCUT_CCP_1HSC6 0;
+BA_ "GenSigStartValue" SG_ 1713 HCU_CCP_1HSC6 0;
+BA_ "GenSigStartValue" SG_ 1714 HCU_CCP_2HSC6 0;
+BA_ "GenSigStartValue" SG_ 1715 HCU_CCP_3HSC6 0;
+BA_ "GenSigStartValue" SG_ 1716 HCU_CCP_4HSC6 0;
+BA_ "GenSigStartValue" SG_ 143 HCU_InternalSignalHSC6 0;
+BA_ "GenSigLongName" SG_ 916 EPTChrgCoolngSysStsHSC6 "Electric Powertrain Charge Cooling system Status";
+BA_ "GenSigStartValue" SG_ 916 EPTChrgCoolngSysStsHSC6 0;
+BA_ "GenSigLongName" SG_ 916 HCUChecksum01HSC6 "Hybrid Countrol Unit Checksum Frp01";
+BA_ "GenSigStartValue" SG_ 916 HCUChecksum01HSC6 0;
+BA_ "GenSigLongName" SG_ 916 HCUCounter01HSC6 "Hybrid Countrol Unit Counter Frp01";
+BA_ "GenSigStartValue" SG_ 916 HCUCounter01HSC6 0;
+BA_ "GenSigLongName" SG_ 916 OfbdChrgrNgtvSktTemHSC6 "Offboard Charger Negative Socket Temperature";
+BA_ "GenSigStartValue" SG_ 916 OfbdChrgrNgtvSktTemHSC6 254;
+BA_ "GenSigLongName" SG_ 916 OfbdChrgrNgtvSktTemVHSC6 "Offboard Charger Negative Socket Temperature Validity";
+BA_ "GenSigStartValue" SG_ 916 OfbdChrgrNgtvSktTemVHSC6 1;
+BA_ "GenSigLongName" SG_ 916 OfbdChrgrPstvSktTemHSC6 "Offboard Charger Positive Socket Temperature";
+BA_ "GenSigStartValue" SG_ 916 OfbdChrgrPstvSktTemHSC6 254;
+BA_ "GenSigLongName" SG_ 916 OfbdChrgrPstvSktTemVHSC6 "Offboard Charger Positive Socket Temperature Validity";
+BA_ "GenSigStartValue" SG_ 916 OfbdChrgrPstvSktTemVHSC6 1;
+BA_ "GenSigLongName" SG_ 916 OnbdChrgrSktEleccLckSHSC6 "Onboard Charger Socket Electronic Lock Status";
+BA_ "GenSigStartValue" SG_ 916 OnbdChrgrSktEleccLckSHSC6 0;
+BA_ "GenSigLongName" SG_ 916 TMOfstAngCalCndHSC6 "Traction Motor Offset Angle Calibration Condition";
+BA_ "GenSigStartValue" SG_ 916 TMOfstAngCalCndHSC6 0;
+BA_ "GenSigLongName" SG_ 142 EPTTMMaxToqLmtHSC6 "Electric Powertrain Traction Motor Maximum Torque Limit";
+BA_ "GenSigStartValue" SG_ 142 EPTTMMaxToqLmtHSC6 2047;
+BA_ "GenSigLongName" SG_ 142 EPTTMMaxToqLmtVHSC6 "Electric Powertrain Traction Motor Maximum Torque Limit Validity";
+BA_ "GenSigStartValue" SG_ 142 EPTTMMaxToqLmtVHSC6 1;
+BA_ "GenSigLongName" SG_ 142 EPTTMMinToqLmtHSC6 "Electric Powertrain Traction Motor Minimum Torque Limit";
+BA_ "GenSigStartValue" SG_ 142 EPTTMMinToqLmtHSC6 1024;
+BA_ "GenSigStartValue" SG_ 142 EPTTMMinToqLmtVHSC6 0;
+BA_ "GenSigLongName" SG_ 142 EPTTMToqSlewRateHSC6 "Electric Powertrain Traction Motor Torque Slew Rate";
+BA_ "GenSigStartValue" SG_ 142 EPTTMToqSlewRateHSC6 65535;
+BA_ "GenSigLongName" SG_ 142 EPTTMToqSlewRateVHSC6 "Electric Powertrain Traction Motor Torque Slew Rate Validity";
+BA_ "GenSigStartValue" SG_ 142 EPTTMToqSlewRateVHSC6 1;
+BA_ "GenSigStartValue" SG_ 142 HCUChecksum04HSC6 0;
+BA_ "GenSigStartValue" SG_ 142 HCUCounter04HSC6 0;
+BA_ "GenSigLongName" SG_ 138 ElecMotEmgcShutDwnHSC6 "Electric Motor Emergency Shut Down";
+BA_ "GenSigStartValue" SG_ 138 ElecMotEmgcShutDwnHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTHVBatPwrRlseReqHSC6 "Electric Powertrain High Voltage Battery Power Release Request";
+BA_ "GenSigStartValue" SG_ 138 EPTHVBatPwrRlseReqHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTHVEmgcPwrOffReqHSC6 "Electric Powertrain High Voltage Emergency Power Off Request";
+BA_ "GenSigStartValue" SG_ 138 EPTHVEmgcPwrOffReqHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTMainRelayDrvReqHSC6 "Electric Powertrain Main Relay Drive Request";
+BA_ "GenSigStartValue" SG_ 138 EPTMainRelayDrvReqHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTTMDmpngCtrlReqHSC6 "Electric Powertrain Traction Motor Damping Control Request";
+BA_ "GenSigStartValue" SG_ 138 EPTTMDmpngCtrlReqHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTTMMdReqHSC6 "Electric Powertrain Traction Motor Mode Request";
+BA_ "GenSigStartValue" SG_ 138 EPTTMMdReqHSC6 0;
+BA_ "GenSigLongName" SG_ 138 EPTTMSpdReqHSC6 "Electric Powertrain Traction Motor Speed Request";
+BA_ "GenSigStartValue" SG_ 138 EPTTMSpdReqHSC6 32768;
+BA_ "GenSigLongName" SG_ 138 EPTTMToqReqHSC6 "Electric Powertrain Traction Motor Torque Request";
+BA_ "GenSigStartValue" SG_ 138 EPTTMToqReqHSC6 1024;
+BA_ "GenSigLongName" SG_ 138 HCUChecksum05HSC6 "Hybrid Countrol Unit Checksum Frp05";
+BA_ "GenSigStartValue" SG_ 138 HCUChecksum05HSC6 0;
+BA_ "GenSigLongName" SG_ 138 HCUCounter05HSC6 "Hybrid Countrol Unit Counter Frp05";
+BA_ "GenSigStartValue" SG_ 138 HCUCounter05HSC6 0;
+BA_ "GenSigLongName" SG_ 251 EPTStCmdOn_h6HSC6 "Electric Powertrain Start Command On";
+BA_ "GenSigStartValue" SG_ 251 EPTStCmdOn_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 406 EPTRdy_h6HSC6 "Electric Powertrain Ready";
+BA_ "GenSigStartValue" SG_ 406 EPTRdy_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 922 HCUOnbdChrgrSktNgtvSnsrTemHSC6 "Hybrid Control Unit On-board Charger Socket Negative Sensor Temperature";
+BA_ "GenSigStartValue" SG_ 922 HCUOnbdChrgrSktNgtvSnsrTemHSC6 214;
+BA_ "GenSigLongName" SG_ 1664 ISGPhaseCurrentHSC6 "Integrated Starter Generator Phase Current";
+BA_ "GenSigStartValue" SG_ 1664 ISGPhaseCurrentHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernOverIdcHSC6 "Integrated Starter Generator Derating Due To Over Current";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernOverIdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernOverTempHSC6 "Integrated Starter Generator Derating Due To Over Temperature";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernOverTempHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernOverUdcHSC6 "Integrated Starter Generator Derating Due To Over Voltage";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernOverUdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernTqMaxHSC6 "Integrated Starter Generator Derating Due To Above Maximum Torque";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernTqMaxHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernTqMinHSC6 "Integrated Starter Generator Derating Due To Below Minimum Torque";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernTqMinHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernUnderIdcHSC6 "Integrated Starter Generator Derating Due To Under Current";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernUnderIdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGDernUnderUdcHSC6 "Integrated Starter Generator Derating Due To Under Voltage";
+BA_ "GenSigStartValue" SG_ 1680 ISGDernUnderUdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1680 ISGImmoResultHSC6 "Integrated Starter Generator Immo Result";
+BA_ "GenSigStartValue" SG_ 1680 ISGImmoResultHSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGActuToqHSC6 "Integrated Starter Generator Actual Torque";
+BA_ "GenSigStartValue" SG_ 147 ISGActuToqHSC6 1024;
+BA_ "GenSigLongName" SG_ 147 ISGActuToqV_h6HSC6 "Integrated Starter Generator Actual Torque Validity";
+BA_ "GenSigStartValue" SG_ 147 ISGActuToqV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 147 ISGAltngCircuitShrtCRHSC6 "Integrated Starter Generator Alternating Circuit Short Circuit Ready";
+BA_ "GenSigStartValue" SG_ 147 ISGAltngCircuitShrtCRHSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGChecksum03HSC6 "Isg Frp03 Message Checksum";
+BA_ "GenSigStartValue" SG_ 147 ISGChecksum03HSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGClntPumpPWMReqHSC6 "Integrated Starter Generator Stator Coolant Pump Pulse Width Modulation Request";
+BA_ "GenSigStartValue" SG_ 147 ISGClntPumpPWMReqHSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGCounter03HSC6 "Isg Frp03 Message Rolling Counter";
+BA_ "GenSigStartValue" SG_ 147 ISGCounter03HSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGOfstAngCalReqHSC6 "Integrated Starter Generator Offset Angle Calibration Request";
+BA_ "GenSigStartValue" SG_ 147 ISGOfstAngCalReqHSC6 0;
+BA_ "GenSigLongName" SG_ 147 ISGSpdHSC6 "Integrated Starter Generator Speed";
+BA_ "GenSigStartValue" SG_ 147 ISGSpdHSC6 32768;
+BA_ "GenSigLongName" SG_ 147 ISGSpdVHSC6 "Integrated Starter Generator Speed Validity";
+BA_ "GenSigStartValue" SG_ 147 ISGSpdVHSC6 1;
+BA_ "GenSigLongName" SG_ 147 ISGSta_h6HSC6 "Integrated Starter Generator State";
+BA_ "GenSigStartValue" SG_ 147 ISGSta_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 150 ISGChecksum04HSC6 "Isg Frp04 Message Checksum";
+BA_ "GenSigStartValue" SG_ 150 ISGChecksum04HSC6 0;
+BA_ "GenSigLongName" SG_ 150 ISGCounter04HSC6 "Isg Frp04 Message Rolling Counter";
+BA_ "GenSigStartValue" SG_ 150 ISGCounter04HSC6 0;
+BA_ "GenSigLongName" SG_ 150 ISGDmpngCtrlAHSC6 "Integrated Starter Generator Damping Control Active";
+BA_ "GenSigStartValue" SG_ 150 ISGDmpngCtrlAHSC6 0;
+BA_ "GenSigLongName" SG_ 150 ISGInvtrCrntHSC6 "Integrated Starter Generator Inverter Current";
+BA_ "GenSigStartValue" SG_ 150 ISGInvtrCrntHSC6 1024;
+BA_ "GenSigLongName" SG_ 150 ISGInvtrCrntVHSC6 "Integrated Starter Generator Inverter Current Validity";
+BA_ "GenSigStartValue" SG_ 150 ISGInvtrCrntVHSC6 1;
+BA_ "GenSigLongName" SG_ 150 ISGMaxAvlblToqHSC6 "Integrated Starter Generator Maximum Available Torque";
+BA_ "GenSigStartValue" SG_ 150 ISGMaxAvlblToqHSC6 2047;
+BA_ "GenSigLongName" SG_ 150 ISGMaxAvlblToqVHSC6 "Integrated Starter Generator Maximum Available Torque Validity";
+BA_ "GenSigStartValue" SG_ 150 ISGMaxAvlblToqVHSC6 1;
+BA_ "GenSigLongName" SG_ 150 ISGMinAvlblToqHSC6 "Integrated Starter Generator Minimum Available Torque";
+BA_ "GenSigStartValue" SG_ 150 ISGMinAvlblToqHSC6 0;
+BA_ "GenSigLongName" SG_ 150 ISGMinAvlblToqVHSC6 "Integrated Starter Generator Minimum Available Torque Validity";
+BA_ "GenSigStartValue" SG_ 150 ISGMinAvlblToqVHSC6 1;
+BA_ "GenSigLongName" SG_ 150 ISGNoDmpngCtrlToqHSC6 "Integrated Starter Generator No Damping Control Torque";
+BA_ "GenSigStartValue" SG_ 150 ISGNoDmpngCtrlToqHSC6 1024;
+BA_ "GenSigLongName" SG_ 919 ISGChecksum05HSC6 "Integrated Starter Generator Stator Frame05 Message Checksum";
+BA_ "GenSigStartValue" SG_ 919 ISGChecksum05HSC6 0;
+BA_ "GenSigLongName" SG_ 919 ISGCounter05HSC6 "Integrated Starter Generator Stator Frame05 Message Rolling Counter";
+BA_ "GenSigStartValue" SG_ 919 ISGCounter05HSC6 0;
+BA_ "GenSigLongName" SG_ 919 ISGFltIOHSC6 "Integrated Starter Generator Fault Indication On";
+BA_ "GenSigStartValue" SG_ 919 ISGFltIOHSC6 0;
+BA_ "GenSigLongName" SG_ 919 ISGHVInhdHSC6 "Integrated Starter Generator High Voltage Inhibited";
+BA_ "GenSigStartValue" SG_ 919 ISGHVInhdHSC6 0;
+BA_ "GenSigLongName" SG_ 919 ISGInvtrTemHSC6 "Integrated Starter Generator Inverter Temperature";
+BA_ "GenSigStartValue" SG_ 919 ISGInvtrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 919 ISGOvhtdHSC6 "Integrated Starter Generator Overheated";
+BA_ "GenSigStartValue" SG_ 919 ISGOvhtdHSC6 0;
+BA_ "GenSigLongName" SG_ 919 ISGSttrTemHSC6 "Integrated Starter Generator Stator Temperature";
+BA_ "GenSigStartValue" SG_ 919 ISGSttrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 919 ISGToqDrtngHSC6 "Integrated Starter Generator Torque Derating";
+BA_ "GenSigStartValue" SG_ 919 ISGToqDrtngHSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr1HSC6 "Integrated Starter Generator Failure 1";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr1HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr2HSC6 "Integrated Starter Generator Failure 2";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr2HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr3HSC6 "Integrated Starter Generator Failure 3";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr3HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr4HSC6 "Integrated Starter Generator Failure 4";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr4HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr5HSC6 "Integrated Starter Generator Failure 5";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr5HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr6HSC6 "Integrated Starter Generator Failure 6";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr6HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr7HSC6 "Integrated Starter Generator Failure 7";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr7HSC6 0;
+BA_ "GenSigLongName" SG_ 920 ISGFlr8HSC6 "Integrated Starter Generator Failure 8";
+BA_ "GenSigStartValue" SG_ 920 ISGFlr8HSC6 0;
+BA_ "GenSigLongName" SG_ 917 ISGHVRdyHSC6 "Integrated Starter Generator High Voltage Ready";
+BA_ "GenSigStartValue" SG_ 917 ISGHVRdyHSC6 0;
+BA_ "GenSigLongName" SG_ 917 ISGInvtrClntTemHSC6 "Integrated Starter Generator Inverter Coolant Temperature";
+BA_ "GenSigStartValue" SG_ 917 ISGInvtrClntTemHSC6 254;
+BA_ "GenSigLongName" SG_ 917 ISGInvtrVolHSC6 "Integrated Starter Generator Inverter Voltage";
+BA_ "GenSigStartValue" SG_ 917 ISGInvtrVolHSC6 0;
+BA_ "GenSigLongName" SG_ 917 ISGInvtrVolVHSC6 "Integrated Starter Generator Inverter Voltage Validity";
+BA_ "GenSigStartValue" SG_ 917 ISGInvtrVolVHSC6 0;
+BA_ "GenSigLongName" SG_ 917 ISGOfstAngHSC6 "Integrated Starter Generator Offset Angle";
+BA_ "GenSigStartValue" SG_ 917 ISGOfstAngHSC6 65534;
+BA_ "GenSigLongName" SG_ 917 ISGRtrTemHSC6 "Integrated Starter Generator Rotor Temperature";
+BA_ "GenSigStartValue" SG_ 917 ISGRtrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 693 PTCActuCrntHSC6 "Positive Temperature Coefficient Actual Current";
+BA_ "GenSigStartValue" SG_ 693 PTCActuCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCActuPwrHSC6 "Positive Temperature Coefficient Actual Power";
+BA_ "GenSigStartValue" SG_ 693 PTCActuPwrHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCChksmHSC6 "Positive Temperature Coefficient Checksum";
+BA_ "GenSigStartValue" SG_ 693 PTCChksmHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCDTCHSC6 "Positive Temperature Coefficient Diagnostic Trouble Code                                                                                                                                                        ";
+BA_ "GenSigStartValue" SG_ 693 PTCDTCHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCHVLckStsHSC6 "Positive Temperature Coefficient High Voltage Lock Status";
+BA_ "GenSigStartValue" SG_ 693 PTCHVLckStsHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCIGBTOverHeatHSC6 "Positive Temperature Coefficient Insulated Gate Bipolar Transistor Over Heat";
+BA_ "GenSigStartValue" SG_ 693 PTCIGBTOverHeatHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCIGBTStsHSC6 "Positive Temperature Coefficient Insulated Gate Bipolar Transistor Status";
+BA_ "GenSigStartValue" SG_ 693 PTCIGBTStsHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCOverCrntHSC6 "Positive Temperature Coefficient Over Current";
+BA_ "GenSigStartValue" SG_ 693 PTCOverCrntHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCOverHeatHSC6 "Positive Temperature Coefficient Over Heat";
+BA_ "GenSigStartValue" SG_ 693 PTCOverHeatHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCOverVolHSC6 "Positive Temperature Coefficient Over Voltage";
+BA_ "GenSigStartValue" SG_ 693 PTCOverVolHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCPCBTemHSC6 "Positive Temperature Coefficient Printed Circuit Board Temperature";
+BA_ "GenSigStartValue" SG_ 693 PTCPCBTemHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCRlngCtrHSC6 "Positive Temperature Coefficient Rolling Counter";
+BA_ "GenSigStartValue" SG_ 693 PTCRlngCtrHSC6 0;
+BA_ "GenSigLongName" SG_ 693 PTCUnderVolHSC6 "Positive Temperature Coefficient Under Voltage";
+BA_ "GenSigStartValue" SG_ 693 PTCUnderVolHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCActuPWMDutyHSC6 "Positive Temperature Coefficient Actual Pulse Width Modulation Duty";
+BA_ "GenSigStartValue" SG_ 694 PTCActuPWMDutyHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCActuVolHSC6 "Positive Temperature Coefficient Actual Voltage";
+BA_ "GenSigStartValue" SG_ 694 PTCActuVolHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCIGBTOvallStsHSC6 "Positive Temperature Coefficient Insulated Gate Bipolar Transistor Overall Status";
+BA_ "GenSigStartValue" SG_ 694 PTCIGBTOvallStsHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCIGBTTemHSC6 "Positive Temperature Coefficient Insulated Gate Bipolar Transistor Temperature";
+BA_ "GenSigStartValue" SG_ 694 PTCIGBTTemHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCInptTemHSC6 "Positive Temperature Coefficient Input Temperature";
+BA_ "GenSigStartValue" SG_ 694 PTCInptTemHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCNTCStsHSC6 "Positive Temperature Coefficient Negative Temperature Coefficient Status";
+BA_ "GenSigStartValue" SG_ 694 PTCNTCStsHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCOtptTemHSC6 "Positive Temperature Coefficient Output Temperature";
+BA_ "GenSigStartValue" SG_ 694 PTCOtptTemHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCSecChksmHSC6 "Positive Temperature Coefficient Second Checksum";
+BA_ "GenSigStartValue" SG_ 694 PTCSecChksmHSC6 0;
+BA_ "GenSigLongName" SG_ 694 PTCSecRlngCtrHSC6 "Positive Temperature Coefficient Second Rolling Counter";
+BA_ "GenSigStartValue" SG_ 694 PTCSecRlngCtrHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernOverIdcHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernOverTempHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernOverUdcHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernTqMaxHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernTqMinHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernUnderIdcHSC6 0;
+BA_ "GenSigStartValue" SG_ 1031 SAMDernUnderUdcHSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr1HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr2HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr3HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr4HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr5HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr6HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr7HSC6 0;
+BA_ "GenSigStartValue" SG_ 797 SAMFlr8HSC6 0;
+BA_ "GenSigStartValue" SG_ 926 SAMHVRdyHSC6 0;
+BA_ "GenSigStartValue" SG_ 926 SAMImmoResultHSC6 0;
+BA_ "GenSigStartValue" SG_ 926 SAMInvtrClntTemHSC6 254;
+BA_ "GenSigLongName" SG_ 926 SAMInvtrVolHSC6 "Secondary Axle Motor Inverter Voltage";
+BA_ "GenSigStartValue" SG_ 926 SAMInvtrVolHSC6 0;
+BA_ "GenSigLongName" SG_ 926 SAMInvtrVolVHSC6 "Secondary Axle Motor Inverter Voltage Validity";
+BA_ "GenSigStartValue" SG_ 926 SAMInvtrVolVHSC6 0;
+BA_ "GenSigStartValue" SG_ 926 SAMOfstAngHSC6 65534;
+BA_ "GenSigStartValue" SG_ 926 SAMRtrTemHSC6 254;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeCalendarDHSC6 0;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeCalendarMHSC6 0;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeCalendarYHSC6 0;
+BA_ "GenSigLongName" SG_ 1053 TBOXUnvslTimeChksmHSC6 "Telematics Box Universal Time Checksum";
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeChksmHSC6 254;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeHourOfDayHSC6 0;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeMinuteOfHHSC6 0;
+BA_ "GenSigStartValue" SG_ 1053 TBOXUnvslTimeSecOfMHSC6 0;
+BA_ "GenSigLongName" SG_ 854 TBOXReserDurtnTimeHSC6 "Telematics Box Reservation Duration Time";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserDurtnTimeHSC6 62;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStDayHSC6 "Telematics Box Reservation Charge Start Day";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStDayHSC6 30;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStDurtnTimeHSC6 "Telematics Box Reservation Start Duration Time";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStDurtnTimeHSC6 30;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStHourHSC6 "Telematics Box Reservation Start Hour";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStHourHSC6 30;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStMinuteHSC6 "Telematics Box Reservation Start Minute";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStMinuteHSC6 62;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStMonthHSC6 "Telematics Box Reservation Start Month";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStMonthHSC6 0;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStTimeChksmHSC6 "Telematics Box Reservation Start Time Checksum";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStTimeChksmHSC6 254;
+BA_ "GenSigLongName" SG_ 854 TBOXReserStYearHSC6 "Telematics Box Reservation Start Year";
+BA_ "GenSigStartValue" SG_ 854 TBOXReserStYearHSC6 254;
+BA_ "GenSigLongName" SG_ 856 TBOXReserChrgCtrlReqHSC6 "Telematics Box Reservation Charge Control Request";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserChrgCtrlReqHSC6 0;
+BA_ "GenSigLongName" SG_ 856 TBOXReserChrgEnrgHSC6 "Telematics Box Reservation Charge Energy";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserChrgEnrgHSC6 62;
+BA_ "GenSigLongName" SG_ 856 TBOXReserChrgFrqcHSC6 "Telematics Box Reservation Charge Frequency";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserChrgFrqcHSC6 0;
+BA_ "GenSigLongName" SG_ 856 TBOXReserChrgMdReqHSC6 "Telematics Box Reservation Charge Mode Request";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserChrgMdReqHSC6 0;
+BA_ "GenSigLongName" SG_ 856 TBOXReserChrgRngHSC6 "Telematics Box Reservation Charge Range";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserChrgRngHSC6 1022;
+BA_ "GenSigLongName" SG_ 856 TBOXReserMaxCrntHSC6 "Tbox Reservation Maximun Current";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserMaxCrntHSC6 62;
+BA_ "GenSigLongName" SG_ 856 TBOXReserTrgtSOCHSC6 "Telematics Box Reservation Target Soc";
+BA_ "GenSigStartValue" SG_ 856 TBOXReserTrgtSOCHSC6 1022;
+BA_ "GenSigStartValue" SG_ 856 TBOXWrlsChrgngReqHSC6 0;
+BA_ "GenSigStartValue" SG_ 1055 network_mode_h6 0;
+BA_ "GenSigStartValue" SG_ 1055 signal_config_id_h6 24833;
+BA_ "GenSigLongName" SG_ 1682 TMDernOverIdcHSC6 "Traction Motor Derating Due To Over Current";
+BA_ "GenSigStartValue" SG_ 1682 TMDernOverIdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernOverTempHSC6 "Traction Motor Derating Due To Over Temperature";
+BA_ "GenSigStartValue" SG_ 1682 TMDernOverTempHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernOverUdcHSC6 "Traction Motor Derating Due To Over Voltage";
+BA_ "GenSigStartValue" SG_ 1682 TMDernOverUdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernTqMaxHSC6 "Traction Motor Derating Due To Above Maximum Torque";
+BA_ "GenSigStartValue" SG_ 1682 TMDernTqMaxHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernTqMinHSC6 "Traction Motor Derating Due To Below Minimum Torque";
+BA_ "GenSigStartValue" SG_ 1682 TMDernTqMinHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernUnderIdcHSC6 "Traction Motor Derating Due To Under Current";
+BA_ "GenSigStartValue" SG_ 1682 TMDernUnderIdcHSC6 0;
+BA_ "GenSigLongName" SG_ 1682 TMDernUnderUdcHSC6 "Traction Motor Derating Due To Under Voltage";
+BA_ "GenSigStartValue" SG_ 1682 TMDernUnderUdcHSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMActuToqHSC6 "Traction Motor Actual Torque";
+BA_ "GenSigStartValue" SG_ 148 TMActuToqHSC6 1024;
+BA_ "GenSigLongName" SG_ 148 TMActuToqVHSC6 "Traction Motor Actual Torque Validity";
+BA_ "GenSigStartValue" SG_ 148 TMActuToqVHSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMChecksum01HSC6 "Traction Motor Frame01 Checksum";
+BA_ "GenSigStartValue" SG_ 148 TMChecksum01HSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMCounter01HSC6 "Traction Motor Frame01 Rolling Counter";
+BA_ "GenSigStartValue" SG_ 148 TMCounter01HSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMOvhtdHSC6 "Traction Motor Overheated";
+BA_ "GenSigStartValue" SG_ 148 TMOvhtdHSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMRawSpdHSC6 "Traction Motor Raw Speed";
+BA_ "GenSigStartValue" SG_ 148 TMRawSpdHSC6 32768;
+BA_ "GenSigLongName" SG_ 148 TMSpdV_h6HSC6 "Traction Motor Speed Validity";
+BA_ "GenSigStartValue" SG_ 148 TMSpdV_h6HSC6 1;
+BA_ "GenSigLongName" SG_ 148 TMSpd_h6HSC6 "Traction Motor Speed";
+BA_ "GenSigStartValue" SG_ 148 TMSpd_h6HSC6 32768;
+BA_ "GenSigLongName" SG_ 148 TMSta_h6HSC6 "Traction Motor State";
+BA_ "GenSigStartValue" SG_ 148 TMSta_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 148 TMToqDrtngHSC6 "Traction Motor Torque Derating";
+BA_ "GenSigStartValue" SG_ 148 TMToqDrtngHSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMAShrtCircuitRdyHSC6 "Traction Motor Active Short Circuit Ready";
+BA_ "GenSigStartValue" SG_ 153 TMAShrtCircuitRdyHSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMChecksum02HSC6 "Traction Motor Frame02 Checksum";
+BA_ "GenSigStartValue" SG_ 153 TMChecksum02HSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMCounter02HSC6 "Traction Motor Frame02 Rolling Counter";
+BA_ "GenSigStartValue" SG_ 153 TMCounter02HSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMDmpngCtrlAHSC6 "Traction Motor Damping Control Active";
+BA_ "GenSigStartValue" SG_ 153 TMDmpngCtrlAHSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMInvtrCrntHSC6 "Traction Motor Inverter Current";
+BA_ "GenSigStartValue" SG_ 153 TMInvtrCrntHSC6 1024;
+BA_ "GenSigLongName" SG_ 153 TMInvtrCrntVHSC6 "Traction Motor Inverter Current Validity";
+BA_ "GenSigStartValue" SG_ 153 TMInvtrCrntVHSC6 1;
+BA_ "GenSigLongName" SG_ 153 TMMaxAvlblToqHSC6 "Traction Motor Maximum Available Torque";
+BA_ "GenSigStartValue" SG_ 153 TMMaxAvlblToqHSC6 2047;
+BA_ "GenSigLongName" SG_ 153 TMMaxAvlblToqVHSC6 "Traction Motor Maximum Available Torque Validity";
+BA_ "GenSigStartValue" SG_ 153 TMMaxAvlblToqVHSC6 1;
+BA_ "GenSigLongName" SG_ 153 TMMinAvlblToqHSC6 "Traction Motor Minimum Available Torque";
+BA_ "GenSigStartValue" SG_ 153 TMMinAvlblToqHSC6 0;
+BA_ "GenSigLongName" SG_ 153 TMMinAvlblToqVHSC6 "Traction Motor Minimum Available Torque Validity";
+BA_ "GenSigStartValue" SG_ 153 TMMinAvlblToqVHSC6 1;
+BA_ "GenSigLongName" SG_ 153 TMNoDmpngCtrlToqHSC6 "Traction Motor No Damping Control Torque";
+BA_ "GenSigStartValue" SG_ 153 TMNoDmpngCtrlToqHSC6 1024;
+BA_ "GenSigLongName" SG_ 153 TMOfstAngCalReqHSC6 "Traction Motor Offset Angle Calibration Request";
+BA_ "GenSigStartValue" SG_ 153 TMOfstAngCalReqHSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMChecksum03HSC6 "Traction Motor Frame03 Checksum";
+BA_ "GenSigStartValue" SG_ 923 TMChecksum03HSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMClntPumpPWMReqHSC6 "Traction Motor Coolant Pump Pulse Width Modulation Request";
+BA_ "GenSigStartValue" SG_ 923 TMClntPumpPWMReqHSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMCounter03HSC6 "Traction Motor Frame03 Rolling Counter";
+BA_ "GenSigStartValue" SG_ 923 TMCounter03HSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMFltIOHSC6 "Traction Motor Fault Indication On";
+BA_ "GenSigStartValue" SG_ 923 TMFltIOHSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMHVInhdHSC6 "Traction Motor High Voltage Inhibited";
+BA_ "GenSigStartValue" SG_ 923 TMHVInhdHSC6 0;
+BA_ "GenSigLongName" SG_ 923 TMInvtrTemHSC6 "Traction Motor Inverter Temperature";
+BA_ "GenSigStartValue" SG_ 923 TMInvtrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 923 TMSttrTemHSC6 "Traction Motor Stator Temperature";
+BA_ "GenSigStartValue" SG_ 923 TMSttrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 934 TMFlr1HSC6 "Traction Motor Failure 1";
+BA_ "GenSigStartValue" SG_ 934 TMFlr1HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr2HSC6 "Traction Motor Failure 2";
+BA_ "GenSigStartValue" SG_ 934 TMFlr2HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr3HSC6 "Traction Motor Failure 3";
+BA_ "GenSigStartValue" SG_ 934 TMFlr3HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr4HSC6 "Traction Motor Failure 4";
+BA_ "GenSigStartValue" SG_ 934 TMFlr4HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr5HSC6 "Traction Motor Failure 5";
+BA_ "GenSigStartValue" SG_ 934 TMFlr5HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr6HSC6 "Traction Motor Failure 6";
+BA_ "GenSigStartValue" SG_ 934 TMFlr6HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr7HSC6 "Traction Motor Failure 7";
+BA_ "GenSigStartValue" SG_ 934 TMFlr7HSC6 0;
+BA_ "GenSigLongName" SG_ 934 TMFlr8HSC6 "Traction Motor Failure 8";
+BA_ "GenSigStartValue" SG_ 934 TMFlr8HSC6 0;
+BA_ "GenSigLongName" SG_ 918 TMHVRdyHSC6 "Traction Motor High Voltage Ready";
+BA_ "GenSigStartValue" SG_ 918 TMHVRdyHSC6 0;
+BA_ "GenSigLongName" SG_ 918 TMImmoResultHSC6 "Traction Motor Immo Result";
+BA_ "GenSigStartValue" SG_ 918 TMImmoResultHSC6 0;
+BA_ "GenSigLongName" SG_ 918 TMInvtrClntTemHSC6 "Traction Motor Inverter Coolant Temperature";
+BA_ "GenSigStartValue" SG_ 918 TMInvtrClntTemHSC6 254;
+BA_ "GenSigLongName" SG_ 918 TMOfstAngHSC6 "Traction Motor Offset Angle";
+BA_ "GenSigStartValue" SG_ 918 TMOfstAngHSC6 65534;
+BA_ "GenSigLongName" SG_ 918 TMRtrTemHSC6 "Traction Motor Rotor Temperature";
+BA_ "GenSigStartValue" SG_ 918 TMRtrTemHSC6 254;
+BA_ "GenSigLongName" SG_ 331 TMInvtrVolHSC6 "Traction Motor Inverter Voltage";
+BA_ "GenSigStartValue" SG_ 331 TMInvtrVolHSC6 0;
+BA_ "GenSigLongName" SG_ 331 TMInvtrVolVHSC6 "Traction Motor Inverter Voltage Volidity";
+BA_ "GenSigStartValue" SG_ 331 TMInvtrVolVHSC6 0;
+BA_ "GenSigLongName" SG_ 404 TrShftLvrPosV_h6HSC6 "Transmission Shift Lever Position Validity";
+BA_ "GenSigStartValue" SG_ 404 TrShftLvrPosV_h6HSC6 0;
+BA_ "GenSigLongName" SG_ 404 TrShftLvrPos_h6HSC6 "Transmission Shift Lever Position";
+BA_ "GenSigStartValue" SG_ 404 TrShftLvrPos_h6HSC6 0;
+BA_ "GenSigStartValue" SG_ 1555 WLC_Dev1_TesterHSC6 0;
+BA_ "GenSigStartValue" SG_ 1556 WLC_Dev2_TesterHSC6 0;
+BA_ "GenSigLongName" SG_ 818 CoxtyBtwnPriyAndSecyCoilFltHSC6 "Coaxiality Between Primary And Secondary Coil Fault";
+BA_ "GenSigStartValue" SG_ 818 CoxtyBtwnPriyAndSecyCoilFltHSC6 0;
+BA_ "GenSigLongName" SG_ 818 CoxtyOfstPosOnXAxisHSC6 "Coaxiality Offset Position On X Axis";
+BA_ "GenSigStartValue" SG_ 818 CoxtyOfstPosOnXAxisHSC6 254;
+BA_ "GenSigLongName" SG_ 818 CoxtyOfstPosOnYAxisHSC6 "Coaxiality Offset Position On Y Axis";
+BA_ "GenSigStartValue" SG_ 818 CoxtyOfstPosOnYAxisHSC6 254;
+BA_ "GenSigStartValue" SG_ 818 FornObjDetHSC6 0;
+BA_ "GenSigStartValue" SG_ 818 FornObjPosDetOnXAxisHSC6 63;
+BA_ "GenSigStartValue" SG_ 818 FornObjPosDetOnYAxisHSC6 63;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrActuInptCrntHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrActuInptVolHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrActuOtptCrntHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrActuOtptVolHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrGndSideStsHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrStsHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrVehSideStsHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrWallSideStsHSC6 0;
+BA_ "GenSigStartValue" SG_ 826 WrlsChrgrWkupAHSC6 0;
+VAL_ 952 ChargerACCurrentHSC6 255 "fail" 0 "A (0x0 - 0xFE)" ;
+VAL_ 952 ChargerACVoltHSC6 255 "fail" 0 "V (0x0 - 0xFE)" ;
+VAL_ 952 ChargerFanStatusHSC6 2 "failure" 1 "closed" 0 "open" ;
+VAL_ 952 ChargerHVCurrentHSC6 1023 "fail" 0 "A (0x0 - 0x3FE)" ;
+VAL_ 952 ChargerHVRelayStatusHSC6 2 "failure" 1 "closed" 0 "open" ;
+VAL_ 952 ChargerHVVoltHSC6 32767 "fail" 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 952 ChargerStatusHSC6 10 "Stop" 9 "Fault" 7 "Warning" 5 "Charging" 3 "Ready" 1 "Powerup" 0 "idle" ;
+VAL_ 952 ChargerWakeUpHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 952 OnbdChrgCPPwmDutyHSC6 127 "Error" 0 "% (0x0 - 0x7E)" ;
+VAL_ 952 OnbdChrgCPPwmStatHSC6 7 "CP out of range" 6 "CP 12V PWM" 5 "CP 12V" 4 "CP 6V PWM" 3 "CP 6V" 2 "CP 9V PWM" 1 "CP 0V" 0 "CP 9V" ;
+VAL_ 954 BMSCellMaxTemIndxHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 954 BMSCellMaxVolIndxHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 954 BMSCellMinTemIndxHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 954 BMSCellMinVolIndxHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 956 ChargerInsideTemp3HSC6 255 "fail" 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 956 ChargerLVCurrentHSC6 255 "fail" 0 "A (0x0 - 0xFE)" ;
+VAL_ 956 ChargerLVVoltHSC6 255 "fail" 0 "V (0x0 - 0xFE)" ;
+VAL_ 956 ChrgrAltCrntLmtHSC6 255 "Fail" 0 "A (0x0 - 0xFE)" ;
+VAL_ 956 OBCShocketPosSnsrTempHSC6 0 "¡æ (0x0 - 0xFE)" ;
+VAL_ 956 OnChrgCmdHSC6 3 "Restart" 2 "Shut Down" 1 "Enable Charging" 0 "Default" ;
+VAL_ 956 OnChrgngFltHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 956 OnChrgrFltHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 958 BMSCellTemHSC6 0 "E=N*1-40 (0x0 - 0xFF)" ;
+VAL_ 958 BMSCellTemIndxHSC6 0 "E=N*1 (0x0 - 0xFE)" ;
+VAL_ 958 BMSCellTemVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 958 BMSCellVolHSC6 0 "E=N*0.001+1 V (0x0 - 0xFFF)" ;
+VAL_ 958 BMSCellVolIndxHSC6 0 "E=N*1 (0x0 - 0xFE)" ;
+VAL_ 958 BMSCellVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 498 SysBPMHSC6 3 "Crank Request" 2 "Run" 1 "ACC" 0 "Off" ;
+VAL_ 498 SysBPMEnbdHSC6 1 "True" 0 "False" ;
+VAL_ 659 BMSBalancingDoneHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSBalancingStatusHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSCellBalancingCountHSC6 255 "Error" 254 "Init" 0 " (0x0 - 0xFD)" ;
+VAL_ 659 BMSCellOverVoltHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSCellUnderVoltHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSContactorPowerCmdHSC6 1 "on" 0 "off" ;
+VAL_ 659 BMSContactorPowerMonHSC6 1 "on" 0 "off" ;
+VAL_ 659 BMSCrashCircuitStatusHSC6 1 "Open" 0 "Closed" ;
+VAL_ 659 BMSEEpromWipHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSLVBatInputHSC6 255 "Error" 254 "Init" 0 "V (0x0 - 0xFD)" ;
+VAL_ 659 BMSModuleEnableHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSNegRelayStatusHSC6 2 "failure" 1 "closed" 0 "open" ;
+VAL_ 659 BMSOffbdChargerWakeupHSC6 1 "active" 0 "not active" ;
+VAL_ 659 BMSOnbdChargerWakeupHSC6 1 "active" 0 "not active" ;
+VAL_ 659 BMSPosRelayStatusHSC6 2 "failure" 1 "closed" 0 "open" ;
+VAL_ 659 BMSPreRelayStatusHSC6 2 "failure" 1 "closed" 0 "open" ;
+VAL_ 659 BMSPTIsolationLevelHSC6 3 "Isolation EPO" 2 "Isolation Alarm" 1 "Isolation Warning" 0 "Isolation OK" ;
+VAL_ 659 BMSReadyHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 659 BMSRelayStepHSC6 12 "main PN closed" 11 "main PN closed DRIVE" 10 "failed mainP open  " 9 "open mainR" 8 "close mainP " 7 "wait precharge" 6 "failed mainN open" 5 "close mainN" 4 "failed mainN weld" 3 "failed mainR open" 2 "close mainR" 1 "failed mainP or R welded" 0 "all open" ;
+VAL_ 659 BMSVehicleWakeupHSC6 1 "active" 0 "not active" ;
+VAL_ 661 BMSChecksum01HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 661 BMSCounter01HSC6 0 "count value (0x0 - 0xF)" ;
+VAL_ 661 BMSPackCrntV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 661 BMSPackCrnt_h6HSC6 0 "A (0x0 - 0xFFFF)" ;
+VAL_ 661 BMSPackSOCHSC6 0 "% (0x0 - 0x3FF)" ;
+VAL_ 661 BMSPackSOCVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 661 BMSPackVolV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 661 BMSPackVol_h6HSC6 0 "V (0x0 - 0xFFF)" ;
+VAL_ 663 BMSBscSta_h6HSC6 20 "Wireless Pre-charging" 19 "Wireless Charging Done" 18 "Wireless Charging Mode" 17 "Wireless Charge Ready" 16 "Off-board Pre-charging" 15 "Fault" 14 "Balancing" 13 "Collision Mode" 12 "On-board Pre-charging" 10 "On-board Charging Done" 9 "Off-board Charging Done" 8 "Offline Balance" 7 "Off-board Charging Mode" 6 "On-board Charging Mode" 5 "Off-board Charge Ready" 4 "On-board Charge Ready" 3 "Drive Mode" 2 "Drive Pre-charging" 1 "Drive Ready" 0 "Power Up" ;
+VAL_ 663 BMSCdstCtrHSC6 0 " (0x0 - 0x3)" ;
+VAL_ 663 BMSChecksum02HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 663 BMSCounter02HSC6 0 "count value (0x0 - 0xF)" ;
+VAL_ 663 BMSFltLvlHSC6 5 "Hard EPO" 4 "Soft EPO" 3 "Alarm 2" 2 "Alarm 1" 1 "Warning" 0 "None" ;
+VAL_ 663 BMSHVILClsdHSC6 1 "True" 0 "False" ;
+VAL_ 663 BMSMainRelaySts_h6HSC6 3 "Failure" 2 "Partly Closed" 1 "All Closed" 0 "All Open" ;
+VAL_ 663 BMSOfbdChrgRelayStsHSC6 2 "Failure" 1 "closed" 0 "open" ;
+VAL_ 663 BMSOnbdChrgRelayStsHSC6 2 "Failure" 1 "closed" 0 "open" ;
+VAL_ 663 BMSPtIsltnRstcHSC6 0 "kOhm (0x0 - 0x3FFF)" ;
+VAL_ 663 BMSPtIsltnRstcVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 663 BMSVehEmgcPwrOffHSC6 14 "Init" 8 "OCWhileCharge" 7 "OCWhileDischarge" 6 "HVBusError" 5 "CloseCmdError" 4 "OCWhilePowerDown" 3 "CrashCircuitOpen" 2 "VehCANMissing" 1 "LVBatterylow" ;
+VAL_ 663 OffbdChrgrSysKeepAwkHSC6 1 "True" 0 "False" ;
+VAL_ 663 OnbdChrgrSktEleccLckEHSC6 2 "Unlock Request" 1 "Lock Request" 0 "Default" ;
+VAL_ 663 OnbdChrgrSysKeepAwkHSC6 1 "True" 0 "False" ;
+VAL_ 369 BMSChecksum03HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 369 BMSChrgCrntLmtHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 369 BMSChrgCrntLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 369 BMSCounter03HSC6 0 "count value (0x0 - 0xF)" ;
+VAL_ 369 BMSDschrgCrntLmtHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 369 BMSDschrgCrntLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 369 BMSMaxVolLmtHSC6 0 "V (0x0 - 0x3FF)" ;
+VAL_ 369 BMSMaxVolLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 369 BMSMinVolLmtHSC6 0 "V (0x0 - 0x3FF)" ;
+VAL_ 369 BMSMinVolLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 668 ChargeCurrentHSC6 1023 "fail" 0 "fail (0x0 - 0x3FE)" ;
+VAL_ 668 ChargePowerHSC6 255 "fail" 0 "kw (0x0 - 0xFE)" ;
+VAL_ 668 ChargerCapacityHSC6 255 "fail" 0 "Ah (0x0 - 0xFE)" ;
+VAL_ 668 ChargerInletTempHSC6 255 "fail" 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 668 ChargerModeHSC6 3 "power control mode" 2 "voltage control mode" 1 "current control mode" 0 "Invalid" ;
+VAL_ 668 ChargerVoltageHSC6 0 " (0x0 - 0x1AE)" ;
+VAL_ 665 BMSFlameGasStatusHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 665 BMSFltCtHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 665 BMSNegativeBusVoltHSC6 4095 "Error" 4094 "Init" 0 "V (0x0 - 0xFFD)" ;
+VAL_ 665 BMSPackCurrent2HSC6 65535 "Error" 65534 "Init" 0 "A (0x0 - 0xFFFD)" ;
+VAL_ 665 BMSPackSOCActualHSC6 255 "Error" 254 "Init" 0 "% (0x0 - 0xFD)" ;
+VAL_ 665 BMSPositiveBusVoltHSC6 4095 "Error" 4094 "Init" 0 "V (0x0 - 0xFFD)" ;
+VAL_ 667 BMSBusbarTempMaxHSC6 255 "Error" 254 "Init" 0 "DegC (0x0 - 0xFD)" ;
+VAL_ 667 BMSChgIndDriverStatHSC6 1 "Open" 0 "Closed" ;
+VAL_ 667 BMSChrgrPlugCnctnIO_h6HSC6 1 "Lamp Off" 0 "Lamp On" ;
+VAL_ 667 BMSChrgStsIO_h6HSC6 1 "Lamp Off" 0 "Lamp On" ;
+VAL_ 667 BMSConIndDriverStatHSC6 1 "Open" 0 "Closed" ;
+VAL_ 667 BMSLiquidSensorStHSC6 3 "OOR High" 2 "OOR Low" 1 "Fault" 0 "OK" ;
+VAL_ 667 BMSPackSOHHSC6 1023 "Error" 1022 "Init" 0 "% (0x0 - 0x3FD)" ;
+VAL_ 667 BMSStaOfHealthCapctHSC6 255 "Error" 254 "Init" 0 "% (0x0 - 0xFD)" ;
+VAL_ 667 BMSStaOfHealthResiHSC6 255 "Error" 254 "Init" 0 "% (0x0 - 0xFD)" ;
+VAL_ 1100 keep_network_BMSHSC6 1 "keep network request" 0 "no keep network request" ;
+VAL_ 370 BMSChrgPeakPwrHSC6 0 "kw (0x0 - 0x7FF)" ;
+VAL_ 370 BMSChrgPeakPwrVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 370 BMSChrgPwrLmtHSC6 0 "kw (0x0 - 0x7FF)" ;
+VAL_ 370 BMSChrgPwrLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 370 BMSDschrgPeakPwrHSC6 0 "kw (0x0 - 0x7FF)" ;
+VAL_ 370 BMSDschrgPeakPwrVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 370 BMSDschrgPwrLmtHSC6 0 "kw (0x0 - 0x7FF)" ;
+VAL_ 370 BMSDschrgPwrLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 371 BMSCellMaxVolHSC6 0 "V (0x0 - 0x1FFF)" ;
+VAL_ 371 BMSCellMaxVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 371 BMSCellMinVolHSC6 0 "V (0x0 - 0x1FFF)" ;
+VAL_ 371 BMSCellMinVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 371 BMSChrgBufHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 371 BMSChrgBufVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 371 BMSDschrgBufHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 371 BMSDschrgBufVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 674 BMSCellMaxTemV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 674 BMSCellMaxTem_h6HSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 674 BMSCellMinTemV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 674 BMSCellMinTem_h6HSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 674 BMSChrgReqHSC6 3 "Reserved" 2 "Charge Fault" 1 "Charge Request" 0 "No Charge Request" ;
+VAL_ 674 BMSOdoFctHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 674 BMSOdoFctVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 674 BMSOfbdChrgrPlugOn_h6HSC6 1 "True" 0 "False" ;
+VAL_ 674 BMSOnbdChrgrPlugOn_h6HSC6 1 "True" 0 "False" ;
+VAL_ 674 VehElecRng_h6HSC6 0 "km (0x0 - 0x7FF)" ;
+VAL_ 939 BMSAvlblEnrgV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 939 BMSAvlblEnrg_h6HSC6 0 "kwh (0x0 - 0xFF)" ;
+VAL_ 939 HVBatElecEnrgAvgRate_h6HSC6 0 "kwh/100km (0x0 - 0x3FF)" ;
+VAL_ 940 BMSPackSOCDspV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 940 BMSPackSOCDsp_h6HSC6 0 "% (0x0 - 0x3FF)" ;
+VAL_ 913 BMSChrgngRmnngStTime_h6HSC6 0 "minute (0x0 - 0x7FF)" ;
+VAL_ 913 BMSChrgSts_h6HSC6 5 "Reserved" 4 "Charge Fault" 3 "Balancing" 2 "Charge Done" 1 "Charging" 0 "None" ;
+VAL_ 913 BMSReserDurtnTimeDspCmd_h6HSC6 0 " (0x0 - 0x28)" ;
+VAL_ 913 BMSReserPushItemHSC6 8 "Electric Lock Abnormal" 7 "Reserve information updated to the next day" 6 "Reserve Information Update Failure" 5 "Charging Complete" 4 "Charging Start" 3 "Charge Cease" 2 "Charging Fault" 1 "Charging Gun Not Plug In" 0 "None" ;
+VAL_ 913 BMSReserStDurtnTimeDspCmdHSC6 0 " (0x0 - 0x17)" ;
+VAL_ 913 BMSReserStHourDspCmd_h6HSC6 0 " (0x0 - 0x17)" ;
+VAL_ 913 BMSReserStMinuteDspCmdHSC6 0 " (0x0 - 0x3B)" ;
+VAL_ 915 BMSReserChrgCtrlDspCmdHSC6 4 "Reserved" 3 "Command Execute Failed" 2 "Command Execute Success" 1 "Command Accept" 0 "None" ;
+VAL_ 915 BMSReserChrgEnrgDspCmd_h6HSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 915 BMSReserChrgFltReasonHSC6 4096 "Reserved" 2048 "Voltage Mismatch" 1024 "Current Mismatch" 512 "Voltage Low" 256 "Voltage High" 128 "Current Low" 64 "Current High" 32 "Temperature Low" 16 "Temperature High" 8 "Communication Fault" 4 "Isolation Fault" 2 "HVIL Satus Abnormal" 1 "Charger Not Ready" 0 "None" ;
+VAL_ 915 BMSReserChrgFrqcDspCmdHSC6 3 "Reserved" 2 "Daily" 1 "Once" 0 "None" ;
+VAL_ 915 BMSReserChrgMdDspCmd_h6HSC6 4 "Soc Based Mode" 3 "Range Based Mode" 2 "Energy Based Mode" 1 "Time Based Mode" 0 "Unavailable" ;
+VAL_ 915 BMSReserChrgRespVHSC6 1 "invalid" 0 "valid" ;
+VAL_ 915 BMSReserChrgRngDspCmd_h6HSC6 0 " (0x0 - 0x3FF)" ;
+VAL_ 915 BMSReserFltReasonHSC6 5 "Global Time Set Failure" 4 "Global Time Not Reasonable" 3 "Time Setting Not Reasonable" 2 "BMS Set RTC Failed" 1 "EEPROM Storage Failed" 0 "None" ;
+VAL_ 915 BMSReserMaxCrntDspCmd_h6HSC6 0 " (0x0 - 0x20)" ;
+VAL_ 915 BMSReserStaDspCmdHSC6 3 "Reserved" 2 "Reservation Switch Off" 1 "Reservation Switch On" 0 "None" ;
+VAL_ 915 BMSReserTrgtSOCDspCmd_h6HSC6 0 " (0x0 - 0x3FF)" ;
+VAL_ 936 BMSWrlsChrgnFltReason_h6HSC6 19 "wireless charging fault" 18 "Door not locked" 17 "WLC system fault" 9 "WLC primary side fault" 8 "WLC wall side fault" 4 "WLC ground side fault" 2 "WLC vehicle side fault" 1 "WLC system ready" 0 "init" ;
+VAL_ 936 BMSWrlsChrgngResp_h6HSC6 4 "wireless charging switch off" 2 "wireless charging switch on by TBox" 1 "wireless charging switch on by FICM" 0 "None" ;
+VAL_ 936 ChrgngRmnngTimeV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 936 ChrgngRmnngTime_h6HSC6 0 "min (0x0 - 0x3FF)" ;
+VAL_ 820 BMSWkupWrlsChrgrHSC6 1 "wakeup" 0 "not wakeup" ;
+VAL_ 820 BMSWrlsChrgngCmd_oldHSC6 3 "Restart" 2 "Shut down" 1 "Enable Charging" 0 "default" ;
+VAL_ 820 BMSWrlsChrgngFltHSC6 1 "fault" 0 "no fault" ;
+VAL_ 820 BMSWrlsChrgngInptCrntLmtHSC6 0 "A (0x0 - 0xFF)" ;
+VAL_ 820 BMSWrlsChrgngMdHSC6 3 "current control mode" 2 "voltage control mode" 1 "power control mode" 0 "Invalid" ;
+VAL_ 820 BMSWrlsChrgngOtptCrntHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 820 BMSWrlsChrgngOtptPwrHSC6 0 "kW (0x0 - 0xFE)" ;
+VAL_ 820 BMSWrlsChrgngOtptVolHSC6 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 820 BMSWrlsChrgngSftyHSC6 1 "safe" 0 "notsafe" ;
+VAL_ 820 BMSWrlsChrgrFltHSC6 1 "fault" 0 "no fault" ;
+VAL_ 672 BMSChksmHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 672 BMSEnbPTCHSC6 1 "On" 0 "Off" ;
+VAL_ 672 BMSInptClntTemHSC6 0 " (0x0 - 0x1E0)" ;
+VAL_ 672 BMSReqMdHSC6 3 "PWM Control" 2 "Tap Position Control" 1 "Power Control" 0 "No Request" ;
+VAL_ 672 BMSReqPWMHSC6 0 " (0x0 - 0x64)" ;
+VAL_ 672 BMSReqPwrHSC6 0 " (0x0 - 0xFFFF)" ;
+VAL_ 672 BMSReqRlngCtrHSC6 0 " (0x0 - 0xF)" ;
+VAL_ 672 BMSReqTapPosHSC6 7 "7 Tap" 6 "6 Tap" 5 "5 Tap" 4 "4 Tap" 3 "3 Tap" 2 "2 Tap" 1 "1 Tap" 0 "0 Tap" ;
+VAL_ 962 CalDataHSC6 0 " (0x0 - 0xFFFFFF)" ;
+VAL_ 962 ErIndHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 962 ErInfoHSC6 0 " (0x0 - 0x7F)" ;
+VAL_ 962 PriyCrntValHSC6 0 " (0x0 - 0x19999999)" ;
+VAL_ 831 BMSChrgngMdHSC6 3 "power control mode" 2 "voltage control mode" 1 "current control mode" 0 "Invalid" ;
+VAL_ 831 BMSChrgrAltCrntLmtHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 831 BMSChrgrOtptCrntHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 831 BMSChrgrOtptPwrHSC6 0 "kw (0x0 - 0xFE)" ;
+VAL_ 831 BMSChrgrOtptVolHSC6 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 831 BMSOnbdChrgngCmdHSC6 3 "Restart" 2 "Shut Down" 1 "Enable Charging" 0 "Default" ;
+VAL_ 831 BMSOnBdChrgngFltHSC6 1 "On-board charging fault" 0 "No On-board charging fault" ;
+VAL_ 831 BMSOnBdChrgngNotSftyHSC6 1 "Not safe" 0 "Safe" ;
+VAL_ 831 BMSOnBdChrgrClntTemHSC6 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 831 BMSOnBdChrgrFltHSC6 1 "On-board charger fault" 0 "No On-board charger fault" ;
+VAL_ 831 BMSOnBdChrgrSktElecClkStsHSC6 3 "Feedback Error" 2 "Control Line Failure" 1 "Locked" 0 "Unlocked" ;
+VAL_ 960 BMSReqChrgrOtptCrntHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 960 BMSReqChrgrOtptPwrHSC6 0 "kw (0x0 - 0xFE)" ;
+VAL_ 960 BMSReqChrgrOtptVolHSC6 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 1091 wake_network_BMSHSC6 1 "wake-up network request" 0 "no wake-up network request" ;
+VAL_ 497 BPMMstrAvlbly_h1HSC6 1 "True" 0 "False" ;
+VAL_ 497 PwrMdMstrAccryA_h1HSC6 1 "Active" 0 "Inactive" ;
+VAL_ 497 PwrMdMstrRunCrkA_h1HSC6 1 "Active" 0 "Inactive" ;
+VAL_ 497 SysOpnlMd_h1HSC6 5 "Diagnosic or Reprogramming(Reserve)" 4 "Storage Mode" 3 "Show Room(Reserve)" 2 "Transit Mode" 1 "Manufacturing Mode" 0 "Normal Mode" ;
+VAL_ 497 SysPwrMdV_h1HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysPwrMd_h1HSC6 3 "Crank Request" 2 "Run" 1 "Accessory" 0 "Off" ;
+VAL_ 497 SysVolMdV_h1HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVolMd_h1HSC6 3 "Illegal System  Voltage" 2 "High System Voltage" 1 "Low System Voltage" 0 "Normal" ;
+VAL_ 497 SysVolV_h1HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVol_h1HSC6 0 "V (0x0 - 0xFF)" ;
+VAL_ 1344 VehOdoV_h1HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 1344 VehOdo_h1HSC6 0 " (0x0 - 0xFFFFFF)" ;
+VAL_ 851 VehSpdAvgDrvnHSC6 0 "km/h (0x0 - 0x7FFF)" ;
+VAL_ 851 VehSpdAvgDrvnVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 827 OnBdChrgrCtrlPilotPWMDutyHSC6 0 "% (0x0 - 0x64)" ;
+VAL_ 827 OnBdChrgrFltCtHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 827 OnBdChrgrFltStsHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 827 OnBdChrgrInsdTem3HSC6 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 827 OnBdChrgrLastWkupHSC6 1 "TURE" 0 "FLASE" ;
+VAL_ 827 OnBdChrgrOtptVolHSC6 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 827 OnBdChrgrSktNgtvSnsrTemHSC6 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 827 OnBdChrgrSktPstvSnsrTemHSC6 0 "DegC (0x0 - 0xFE)" ;
+VAL_ 827 OnBdChrgrWkupHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 829 OnBdChrgngSpRsnHSC6 3 "AmbTempAbnormal" 2 "Charge System Stop" 1 "Charge Station/Gun Stop" 0 "Default" ;
+VAL_ 829 OnBdChrgrAltrCrntInptCrntHSC6 0 "A (0x0 - 0xFF)" ;
+VAL_ 829 OnBdChrgrAltrCrntInptVolHSC6 0 "V (0x0 - 0xFE)" ;
+VAL_ 829 OnBdChrgrClntPumpDutyHSC6 15 "Error" 10 "100%" 9 "90%" 8 "80%" 7 "70%" 6 "60%" 5 "50%" 4 "40%" 3 "30%" 2 "20%" 1 "10%" 0 "0%" ;
+VAL_ 829 OnBdChrgrCtrlPilotPWMStsHSC6 7 "CP out of range" 6 "CP 12V PWM" 5 "CP 12V" 4 "CP 6V PWM" 3 "CP 6V" 2 "CP 9V PWM" 1 "CP 0V" 0 "CP 9V" ;
+VAL_ 829 OnBdChrgrHVILStsHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 829 OnBdChrgrOtptCrntHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 829 OnBdChrgrStsHSC6 12 "Power off" 10 "Stop" 9 "Fault" 7 "Warning" 5 "Charging" 3 "Ready" 1 "Power up" 0 "idle" ;
+VAL_ 916 EPTChrgCoolngSysStsHSC6 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Cooling system Unable" 1 "Cooling system Limited" 0 "Cooling system Normal" ;
+VAL_ 916 HCUChecksum01HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 916 HCUCounter01HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 916 OfbdChrgrNgtvSktTemHSC6 0 "¡æ (0x0 - 0xFF)" ;
+VAL_ 916 OfbdChrgrNgtvSktTemVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 916 OfbdChrgrPstvSktTemHSC6 0 "¡æ (0x0 - 0xFF)" ;
+VAL_ 916 OfbdChrgrPstvSktTemVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 916 OnbdChrgrSktEleccLckSHSC6 3 "Electronic Lock Feedback Error" 2 "Electronic Lock Control Line Failure" 1 "Locked" 0 "Unlocked" ;
+VAL_ 916 TMOfstAngCalCndHSC6 255 "Condition Ready" 1 " (0x1 - 0xFE)" 0 "Condition Preparing" ;
+VAL_ 142 EPTTMMaxToqLmtHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 142 EPTTMMaxToqLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 142 EPTTMMinToqLmtHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 142 EPTTMMinToqLmtVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 142 EPTTMToqSlewRateHSC6 0 "Nm/s (0x0 - 0xFFFF)" ;
+VAL_ 142 EPTTMToqSlewRateVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 142 HCUChecksum04HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 142 HCUCounter04HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 138 ElecMotEmgcShutDwnHSC6 1 "true" 0 "false" ;
+VAL_ 138 EPTHVBatPwrRlseReqHSC6 1 "request" 0 "no request" ;
+VAL_ 138 EPTHVEmgcPwrOffReqHSC6 1 "request" 0 "no request" ;
+VAL_ 138 EPTMainRelayDrvReqHSC6 3 "Reserved" 2 "Close Fast Charge Relay" 1 "Close Main Relay" 0 "Open Request" ;
+VAL_ 138 EPTTMDmpngCtrlReqHSC6 1 "True" 0 "False" ;
+VAL_ 138 EPTTMMdReqHSC6 14 "Discharge" 13 "Reserved" 12 "Reserved" 11 "Afterrun" 10 "Udc Voltage Control" 9 "Idc Current Control" 8 "Torque Control" 7 "Internal Speed Control" 6 "External Speed Control" 5 "Offset Angle Calibration" 4 "Reserved" 3 "Standby" 2 "Reserved" 1 "PreCharge" ;
+VAL_ 138 EPTTMSpdReqHSC6 0 "rpm (0x0 - 0xFFFF)" ;
+VAL_ 138 EPTTMToqReqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 138 HCUChecksum05HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 138 HCUCounter05HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 251 EPTStCmdOn_h6HSC6 1 "True" 0 "False" ;
+VAL_ 406 EPTRdy_h6HSC6 1 "Ready" 0 "Not ready" ;
+VAL_ 922 HCUOnbdChrgrSktNgtvSnsrTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 1664 ISGPhaseCurrentHSC6 32768 "A (0x8000 - 0x107FF0)" ;
+VAL_ 1680 ISGDernOverIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernOverTempHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernOverUdcHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernTqMaxHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernTqMinHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernUnderIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGDernUnderUdcHSC6 1 "True" 0 "False" ;
+VAL_ 1680 ISGImmoResultHSC6 1 "True" 0 "False" ;
+VAL_ 147 ISGActuToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 147 ISGActuToqV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 147 ISGAltngCircuitShrtCRHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 147 ISGChecksum03HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 147 ISGClntPumpPWMReqHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 147 ISGCounter03HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 147 ISGOfstAngCalReqHSC6 1 "True" 0 "False" ;
+VAL_ 147 ISGSpdHSC6 0 "rpm (0x0 - 0xFFFF)" ;
+VAL_ 147 ISGSpdVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 147 ISGSta_h6HSC6 14 "Discharge" 13 "Failure" 12 "PreFailure" 11 "Afterrun" 10 "Udc Voltage Control" 9 "Idc Current Control" 8 "Torque Control" 7 "Internal Speed Control" 6 "External Speed Control" 5 "Offset Angle Calibration" 3 "Standby" 1 "PreCharge" 0 "Initialization" ;
+VAL_ 150 ISGChecksum04HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 150 ISGCounter04HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 150 ISGDmpngCtrlAHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 150 ISGInvtrCrntHSC6 0 "A (0x0 - 0x7FF)" ;
+VAL_ 150 ISGInvtrCrntVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 150 ISGMaxAvlblToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 150 ISGMaxAvlblToqVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 150 ISGMinAvlblToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 150 ISGMinAvlblToqVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 150 ISGNoDmpngCtrlToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 919 ISGChecksum05HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 919 ISGCounter05HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 919 ISGFltIOHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 919 ISGHVInhdHSC6 1 "True" 0 "False" ;
+VAL_ 919 ISGInvtrTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 919 ISGOvhtdHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 919 ISGSttrTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 919 ISGToqDrtngHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 920 ISGFlr1HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr2HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr3HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr4HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr5HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr6HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr7HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 920 ISGFlr8HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 917 ISGHVRdyHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 917 ISGInvtrClntTemHSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 917 ISGInvtrVolHSC6 0 "V (0x0 - 0x3FD)" ;
+VAL_ 917 ISGInvtrVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 917 ISGOfstAngHSC6 0 "Degree (0x0 - 0xFFFF)" ;
+VAL_ 917 ISGRtrTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 693 PTCActuCrntHSC6 0 " (0x0 - 0x3FC)" ;
+VAL_ 693 PTCActuPwrHSC6 0 " (0x0 - 0xFFFF)" ;
+VAL_ 693 PTCChksmHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 693 PTCDTCHSC6 15 "15" 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 693 PTCHVLckStsHSC6 1 "Fault" 0 "OK" ;
+VAL_ 693 PTCIGBTOverHeatHSC6 1 "over heat" 0 "igbt good" ;
+VAL_ 693 PTCIGBTStsHSC6 1 "Fault" 0 "Normal" ;
+VAL_ 693 PTCOverCrntHSC6 1 "Actived" 0 "Inactived" ;
+VAL_ 693 PTCOverHeatHSC6 1 "Actived" 0 "Inactived" ;
+VAL_ 693 PTCOverVolHSC6 1 "Actived" 0 "Inactived" ;
+VAL_ 693 PTCPCBTemHSC6 0 " (0x0 - 0x1E0)" ;
+VAL_ 693 PTCRlngCtrHSC6 0 " (0x0 - 0xF)" ;
+VAL_ 693 PTCUnderVolHSC6 1 "Actived" 0 "Inactived" ;
+VAL_ 694 PTCActuPWMDutyHSC6 0 " (0x0 - 0xC8)" ;
+VAL_ 694 PTCActuVolHSC6 0 " (0x0 - 0x320)" ;
+VAL_ 694 PTCIGBTOvallStsHSC6 3 "igbt1 and igbt2 bad" 2 "igbt1good,igbt2 bad" 1 "igbt1 bad ,igbt2 good" 0 "igbt1 and igbt2 good" ;
+VAL_ 694 PTCIGBTTemHSC6 0 " (0x0 - 0x1E0)" ;
+VAL_ 694 PTCInptTemHSC6 0 " (0x0 - 0x1E0)" ;
+VAL_ 694 PTCNTCStsHSC6 7 "all sensor bad" 6 "igbt sensor good , ptc in sensor bad  , ptc out sensor bad" 5 "igbt sensor bad , ptc in sensor good , ptc out sensor bad" 4 "igbt sensor good , ptc in sensor good , ptc out sensor bad" 3 "igbt sensor bad , ptc in sensor bad , ptc_out_sensor good" 2 "igbt sensor good , ptc in sensor bad , ptc_out_sensor good" 1 "igbt sensor bad , ptc in sensor good , ptc out sensor good" 0 "all sensor is good" ;
+VAL_ 694 PTCOtptTemHSC6 0 " (0x0 - 0x1E0)" ;
+VAL_ 694 PTCSecChksmHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 694 PTCSecRlngCtrHSC6 0 " (0x0 - 0xF)" ;
+VAL_ 1031 SAMDernOverIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernOverTempHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernOverUdcHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernTqMaxHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernTqMinHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernUnderIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1031 SAMDernUnderUdcHSC6 1 "True" 0 "False" ;
+VAL_ 797 SAMFlr1HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr2HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr3HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr4HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr5HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr6HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr7HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 797 SAMFlr8HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 926 SAMHVRdyHSC6 1 "True" 0 "False" ;
+VAL_ 926 SAMImmoResultHSC6 1 "True" 0 "False" ;
+VAL_ 926 SAMInvtrClntTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 926 SAMInvtrVolHSC6 0 "V (0x0 - 0x3FF)" ;
+VAL_ 926 SAMInvtrVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 926 SAMOfstAngHSC6 0 "Degree (0x0 - 0xFFFF)" ;
+VAL_ 926 SAMRtrTemHSC6 0 "DegC (0x0 - 0xFF)" ;
+VAL_ 1053 TBOXUnvslTimeCalendarDHSC6 0 "day (0x0 - 0x1F)" ;
+VAL_ 1053 TBOXUnvslTimeCalendarMHSC6 12 "December" 11 "November" 10 "October" 9 "September" 8 "August" 7 "July" 6 "June" 5 "May" 4 "April" 3 "March" 2 "February" 1 "January" 0 "Unknown" ;
+VAL_ 1053 TBOXUnvslTimeCalendarYHSC6 0 "year (0x0 - 0xFF)" ;
+VAL_ 1053 TBOXUnvslTimeChksmHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 1053 TBOXUnvslTimeHourOfDayHSC6 0 " (0x0 - 0x1F)" ;
+VAL_ 1053 TBOXUnvslTimeMinuteOfHHSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 1053 TBOXUnvslTimeSecOfMHSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 854 TBOXReserDurtnTimeHSC6 0 " (0x0 - 0x28)" ;
+VAL_ 854 TBOXReserStDayHSC6 0 " (0x0 - 0x1F)" ;
+VAL_ 854 TBOXReserStDurtnTimeHSC6 0 " (0x0 - 0x17)" ;
+VAL_ 854 TBOXReserStHourHSC6 0 " (0x0 - 0x17)" ;
+VAL_ 854 TBOXReserStMinuteHSC6 0 " (0x0 - 0x3B)" ;
+VAL_ 854 TBOXReserStMonthHSC6 12 "December" 11 "November" 10 "October" 9 "September" 8 "August" 7 "July" 6 "June" 5 "May" 4 "April" 3 "March" 2 "February" 1 "January" 0 "Unknown" ;
+VAL_ 854 TBOXReserStTimeChksmHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 854 TBOXReserStYearHSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 856 TBOXReserChrgCtrlReqHSC6 5 "Reserved" 4 "Stop Charge" 3 "Start Charge" 2 "Reservation Switch Off" 1 "Reservation Switch On" 0 "None" ;
+VAL_ 856 TBOXReserChrgEnrgHSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 856 TBOXReserChrgFrqcHSC6 3 "Reserved" 2 "Daily" 1 "Once" 0 "None" ;
+VAL_ 856 TBOXReserChrgMdReqHSC6 4 "Soc Based Mode" 3 "Range Based Mode" 2 "Energy Based Mode" 1 "Time Based Mode" 0 "None" ;
+VAL_ 856 TBOXReserChrgRngHSC6 0 " (0x0 - 0x3FF)" ;
+VAL_ 856 TBOXReserMaxCrntHSC6 0 " (0x0 - 0x20)" ;
+VAL_ 856 TBOXReserTrgtSOCHSC6 0 " (0x0 - 0x3FF)" ;
+VAL_ 856 TBOXWrlsChrgngReqHSC6 3 "Reserved" 2 "Wireless charging switch off" 1 "Wireless charging switch on" 0 "No Request" ;
+VAL_ 1055 network_mode_h6 2 "normal" 1 "shutdown" 0 "start-up" ;
+VAL_ 1055 signal_config_id_h6 17457 "config: IP34 EP/PPV" ;
+VAL_ 1682 TMDernOverIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernOverTempHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernOverUdcHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernTqMaxHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernTqMinHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernUnderIdcHSC6 1 "True" 0 "False" ;
+VAL_ 1682 TMDernUnderUdcHSC6 1 "True" 0 "False" ;
+VAL_ 148 TMActuToqHSC6 0 "Nm (0x0 - 0x7FD)" ;
+VAL_ 148 TMActuToqVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 148 TMChecksum01HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 148 TMCounter01HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 148 TMOvhtdHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 148 TMRawSpdHSC6 0 "rpm (0x0 - 0xFFFF)" ;
+VAL_ 148 TMSpdV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 148 TMSpd_h6HSC6 0 "rpm (0x0 - 0xFFFF)" ;
+VAL_ 148 TMSta_h6HSC6 14 "Discharge" 13 "Failure" 12 "PreFailure" 11 "Afterrun" 10 "Udc Voltage Control" 9 "Idc Current Control" 8 "Torque Control" 7 "Internal Speed Control" 6 "External Speed Control" 5 "Offset Angle Calibration" 3 "Standby" 1 "PreCharge" 0 "Initialization" ;
+VAL_ 148 TMToqDrtngHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 153 TMAShrtCircuitRdyHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 153 TMChecksum02HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 153 TMCounter02HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 153 TMDmpngCtrlAHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 153 TMInvtrCrntHSC6 0 "A (0x0 - 0x7FF)" ;
+VAL_ 153 TMInvtrCrntVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 153 TMMaxAvlblToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 153 TMMaxAvlblToqVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 153 TMMinAvlblToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 153 TMMinAvlblToqVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 153 TMNoDmpngCtrlToqHSC6 0 "Nm (0x0 - 0x7FF)" ;
+VAL_ 153 TMOfstAngCalReqHSC6 1 "True" 0 "False" ;
+VAL_ 923 TMChecksum03HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 923 TMClntPumpPWMReqHSC6 0 "% (0x0 - 0xFF)" ;
+VAL_ 923 TMCounter03HSC6 0 " (0x0 - 0xF)" ;
+VAL_ 923 TMFltIOHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 923 TMHVInhdHSC6 1 "True" 0 "False" ;
+VAL_ 923 TMInvtrTemHSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 923 TMSttrTemHSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr1HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr2HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr3HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr4HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr5HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr6HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr7HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 934 TMFlr8HSC6 0 " (0x0 - 0xFF)" ;
+VAL_ 918 TMHVRdyHSC6 1 "True" 0 "False" ;
+VAL_ 918 TMImmoResultHSC6 1 "TRUE" 0 "FALSE" ;
+VAL_ 918 TMInvtrClntTemHSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 918 TMOfstAngHSC6 0 "Degree (0x0 - 0xFFFF)" ;
+VAL_ 918 TMRtrTemHSC6 0 "Deg C (0x0 - 0xFF)" ;
+VAL_ 331 TMInvtrVolHSC6 0 "V (0x0 - 0x3FF)" ;
+VAL_ 331 TMInvtrVolVHSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 404 TrShftLvrPosV_h6HSC6 1 "Invalid" 0 "Valid" ;
+VAL_ 404 TrShftLvrPos_h6HSC6 15 "Lever Position Unknown" 11 "Forward Range H" 10 "Forward Range G" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges" ;
+VAL_ 818 CoxtyBtwnPriyAndSecyCoilFltHSC6 2 "fault" 1 "no fault" 0 "init" ;
+VAL_ 818 CoxtyOfstPosOnXAxisHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 818 CoxtyOfstPosOnYAxisHSC6 0 " (0x0 - 0xFE)" ;
+VAL_ 818 FornObjDetHSC6 2 "fault" 1 "no fault" 0 "init" ;
+VAL_ 818 FornObjPosDetOnXAxisHSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 818 FornObjPosDetOnYAxisHSC6 0 " (0x0 - 0x3F)" ;
+VAL_ 826 WrlsChrgrActuInptCrntHSC6 0 "A (0x0 - 0xFF)" ;
+VAL_ 826 WrlsChrgrActuInptVolHSC6 0 "V (0x0 - 0xFE)" ;
+VAL_ 826 WrlsChrgrActuOtptCrntHSC6 0 "A (0x0 - 0x3FF)" ;
+VAL_ 826 WrlsChrgrActuOtptVolHSC6 0 "V (0x0 - 0x7FFE)" ;
+VAL_ 826 WrlsChrgrGndSideStsHSC6 5 "Powerup" 4 "fault" 3 "stop" 2 "working" 1 "standby" 0 "idle" ;
+VAL_ 826 WrlsChrgrStsHSC6 12 "Poweroff" 10 "Stop" 9 "Fault" 7 "Warning" 6 "Derating" 5 "Charging" 3 "Ready" 2 "System self-checking" 1 "Powerup" 0 "default" ;
+VAL_ 826 WrlsChrgrVehSideStsHSC6 5 "Powerup" 4 "fault" 3 "stop" 2 "working" 1 "standby" 0 "idle" ;
+VAL_ 826 WrlsChrgrWallSideStsHSC6 5 "Powerup" 4 "fault" 3 "stop" 2 "working" 1 "standby" 0 "idle" ;
+VAL_ 826 WrlsChrgrWkupAHSC6 1 "True" 0 "False" ;
+
