@@ -10,7 +10,7 @@ from multiprocessing import Process, Queue
 
 # 2021.3.16----channel add!
 
-matrix_test_flag = 0
+matrix_test_flag = 1
 
 def receiveMatrixFun(p, queue_matrix):
 
